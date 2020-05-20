@@ -10,9 +10,9 @@ include $(CLEAR_VARS)
 #                DIAG Includes
 # ---------------------------------------------------------------------
 
-LOCAL_C_INCLUDES := vendor/qcom/proprietary/diag/include \
-LOCAL_C_INCLUDES += vendor/qcom/proprietary/diag/src \
-LOCAL_C_INCLUDES += vendor/qcom/proprietary/common/inc \
+LOCAL_C_INCLUDES := vendor/qcom-source/diag/include \
+LOCAL_C_INCLUDES += vendor/qcom-source/diag/src \
+LOCAL_C_INCLUDES += vendor/qcom-source/common/inc \
 
 # ---------------------------------------------------------------------------------
 #                MM Audio Includes

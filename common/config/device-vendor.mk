@@ -5,7 +5,7 @@
 # to pick and choose the optional proprietary modules
 
 # Root of Qualcomm Proprietary component tree
-QC_PROP_ROOT := vendor/qcom/proprietary
+QC_PROP_ROOT := vendor/qcom-source
 
 PRODUCT_LIST := msm7625_surf
 PRODUCT_LIST += msm7625_ffa
@@ -65,7 +65,7 @@ ifneq (, $(filter $(PRODUCT_LIST), $(TARGET_PRODUCT)))
 
   ifeq ($(wildcard $(QC_PROP_ROOT)/common-noship/etc/device-vendor-noship.mk),)
     ifneq ($(call is-android-codename-in-list,GINGERBREAD HONEYCOMB),true)
-      APN_PATH := vendor/qcom/proprietary/common/etc
+      APN_PATH := vendor/qcom-source/common/etc
       PRODUCT_COPY_FILES := $(APN_PATH)/apns-conf.xml:system/etc/apns-conf.xml $(PRODUCT_COPY_FILES)
     endif
   endif
@@ -95,22 +95,22 @@ endif
 
 # Include the QRD extensions.
 ifeq ($(call is-board-platform-in-list,msm8610 msm8226),true)
-$(call inherit-product-if-exists, vendor/qcom/proprietary/qrdplus/Extension/products.mk)
+$(call inherit-product-if-exists, vendor/qcom-source/qrdplus/Extension/products.mk)
 endif
 
 # Include the QRD customer extensions for ChinaMobile.
 ifeq ($(call is-board-platform-in-list,msm8610 msm8226),true)
-$(call inherit-product-if-exists, vendor/qcom/proprietary/qrdplus/ChinaMobile/products.mk)
+$(call inherit-product-if-exists, vendor/qcom-source/qrdplus/ChinaMobile/products.mk)
 endif
 
 # Include the QRD customer extensions for ChinaTelecom.
 ifeq ($(call is-board-platform-in-list,msm8610 msm8226),true)
-$(call inherit-product-if-exists, vendor/qcom/proprietary/qrdplus/ChinaTelecom/products.mk)
+$(call inherit-product-if-exists, vendor/qcom-source/qrdplus/ChinaTelecom/products.mk)
 endif
 
 # Include the QRD customer extensions for ChinaUnicom.
 ifeq ($(call is-board-platform-in-list,msm8610 msm8226),true)
-$(call inherit-product-if-exists, vendor/qcom/proprietary/qrdplus/ChinaUnicom/products.mk)
+$(call inherit-product-if-exists, vendor/qcom-source/qrdplus/ChinaUnicom/products.mk)
 endif
 
 #Add logkit module to build

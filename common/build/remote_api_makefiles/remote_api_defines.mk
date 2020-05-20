@@ -1,4 +1,4 @@
-include vendor/qcom/proprietary/common/build/remote_api_makefiles/target_api_enables.mk
+include vendor/qcom-source/common/build/remote_api_makefiles/target_api_enables.mk
 
 #api enable defines
 ifeq ($(ADC_ENABLE),1)

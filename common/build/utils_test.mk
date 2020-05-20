@@ -3,7 +3,7 @@
 # How to use
 #   $ source build/envsetup.sh
 #   $ choosecombo
-#   $ cd vendor/qcom/proprietary/common/build
+#   $ cd vendor/qcom-source/common/build
 #   $ make -f utils_test.mk
 
 include $(ANDROID_BUILD_TOP)/build/core/utils.mk

@@ -2,7 +2,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-include vendor/qcom/proprietary/common/build/remote_api_makefiles/target_api_enables.mk
+include vendor/qcom-source/common/build/remote_api_makefiles/target_api_enables.mk
 include $(LOCAL_PATH)/rpcgen_api_defines.mk
 
 ifeq ($(call is-board-platform,msm8660),true)
@@ -11,7 +11,7 @@ else
     MODEM_APIS_DIR := $(TARGET_BOARD_PLATFORM)
 endif
 
-API_SRCDIR := vendor/qcom/proprietary/modem-apis/$(MODEM_APIS_DIR)/api
+API_SRCDIR := vendor/qcom-source/modem-apis/$(MODEM_APIS_DIR)/api
 TARGET_MODEM_APIS_PATH := $(LOCAL_PATH)/../../../modem-apis/$(MODEM_APIS_DIR)
 
 RPCGEN_APIS_PATH := $(TARGET_OUT_INTERMEDIATES)/EXECUTABLES/rpcgen_apis_verify_intermediates

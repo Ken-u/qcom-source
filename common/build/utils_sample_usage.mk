@@ -3,7 +3,7 @@
 # How to use this .mk
 #   $ source build/envsetup.sh
 #   $ choosecombo
-#   $ cd vendor/qcom/proprietary/common/build
+#   $ cd vendor/qcom-source/common/build
 #   $ make -f utils_sample_usage.mk
 
 # Contents of this .mk

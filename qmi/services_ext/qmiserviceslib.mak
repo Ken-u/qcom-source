@@ -40,15 +40,15 @@ C_SRC =\
    persistent_device_configuration_v01.c
 
 NEEDINC=\
-   vendor/qcom/proprietary/qmi/inc\
-   vendor/qcom/proprietary/qmi/src\
-   vendor/qcom/proprietary/qmi/platform\
-   vendor/qcom/proprietary/qmi/core/lib/inc\
-   vendor/qcom/proprietary/common/inc\
+   vendor/qcom-source/qmi/inc\
+   vendor/qcom-source/qmi/src\
+   vendor/qcom-source/qmi/platform\
+   vendor/qcom-source/qmi/core/lib/inc\
+   vendor/qcom-source/common/inc\
 
 NEEDLIB =\
 
-BTBUILD=vendor/qcom/proprietary/test/ril/btbuild
+BTBUILD=vendor/qcom-source/test/ril/btbuild
 include $(RELPATHTOROOT)/$(BTBUILD)/bt.driver.mki
 
 -include ./${MAKEFILENAME}.depend.mki

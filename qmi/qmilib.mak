@@ -32,19 +32,19 @@ C_SRC =\
    src/qmi_client.c ## realy is qcci_legacy, but just put here for now
 
 NEEDINC=\
-   vendor/qcom/proprietary/qmi/inc\
-   vendor/qcom/proprietary/qmi/src\
-   vendor/qcom/proprietary/qmi/platform\
-   vendor/qcom/proprietary/qmi/proxy\
-   vendor/qcom/proprietary/qmi/core/lib/inc\
-   vendor/qcom/proprietary/qmi/services\
-   vendor/qcom/proprietary/common/inc\
-   vendor/qcom/proprietary/data/dsutils/inc\
-   vendor/qcom/proprietary/diag/include\
+   vendor/qcom-source/qmi/inc\
+   vendor/qcom-source/qmi/src\
+   vendor/qcom-source/qmi/platform\
+   vendor/qcom-source/qmi/proxy\
+   vendor/qcom-source/qmi/core/lib/inc\
+   vendor/qcom-source/qmi/services\
+   vendor/qcom-source/common/inc\
+   vendor/qcom-source/data/dsutils/inc\
+   vendor/qcom-source/diag/include\
 
 NEEDLIB =\
-   vendor/qcom/proprietary/qmi/services/libqmiservices\
-   vendor/qcom/proprietary/qmi/qmi_client_qmux/libqmi_client_qmux\
+   vendor/qcom-source/qmi/services/libqmiservices\
+   vendor/qcom-source/qmi/qmi_client_qmux/libqmi_client_qmux\
 
 CFLAGS += -m32
 CFLAGS += -DFEATURE_DATA_LOG_QXDM
@@ -55,7 +55,7 @@ CFLAGS += -DFEATURE_QMI_ANDROID
 
 LDFLAGS += -m32
 
-BTBUILD=vendor/qcom/proprietary/test/ril/btbuild
+BTBUILD=vendor/qcom-source/test/ril/btbuild
 include $(RELPATHTOROOT)/$(BTBUILD)/bt.driver.mki
 
 -include ./${MAKEFILENAME}.depend.mki

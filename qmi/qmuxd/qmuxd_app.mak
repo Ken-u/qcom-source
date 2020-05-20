@@ -25,21 +25,21 @@ C_SRC =\
    ../src/qmi_util.c\
 
 NEEDINC=\
-   vendor/qcom/proprietary/qmi/inc\
-   vendor/qcom/proprietary/qmi/src\
-   vendor/qcom/proprietary/qmi/platform\
-   vendor/qcom/proprietary/qmi/core/lib/inc\
-   vendor/qcom/proprietary/common/inc\
-   vendor/qcom/proprietary/diag/include\
+   vendor/qcom-source/qmi/inc\
+   vendor/qcom-source/qmi/src\
+   vendor/qcom-source/qmi/platform\
+   vendor/qcom-source/qmi/core/lib/inc\
+   vendor/qcom-source/common/inc\
+   vendor/qcom-source/diag/include\
    system/core/include/cutils\
 
 NEEDLIB =\
    system/core/liblog/liblog\
    system/core/libcutils/libcutils\
    frameworks/native/libs/utils/libutils\
-   vendor/qcom/proprietary/data/dsutils/src/libdsutils\
-   vendor/qcom/proprietary/diag/src/libdiag\
-   vendor/qcom/proprietary/test/ril/strllib/libstrl\
+   vendor/qcom-source/data/dsutils/src/libdsutils\
+   vendor/qcom-source/diag/src/libdiag\
+   vendor/qcom-source/test/ril/strllib/libstrl\
 
 LIBS = -lz
 
@@ -53,7 +53,7 @@ CFLAGS += -DFEATURE_QMI_ANDROID
 
 LDFLAGS += -m32
 
-BTBUILD=vendor/qcom/proprietary/test/ril/btbuild
+BTBUILD=vendor/qcom-source/test/ril/btbuild
 include $(RELPATHTOROOT)/$(BTBUILD)/bt.driver.mki
 
 -include ./${MAKEFILENAME}.depend.mki

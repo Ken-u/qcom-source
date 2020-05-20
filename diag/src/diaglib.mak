@@ -30,8 +30,8 @@ C_SRC = \
    ts_linux.c\
 
 NEEDINC=\
-   vendor/qcom/proprietary/diag/include\
-   vendor/qcom/proprietary/common/inc\
+   vendor/qcom-source/diag/include\
+   vendor/qcom-source/common/inc\
 
 NEEDLIB =\
 
@@ -39,7 +39,7 @@ CFLAGS += -m32
 CFLAGS += -DFEATURE_LOG_STDOUT
 LDFLAGS += -m32
 
-BTBUILD=vendor/qcom/proprietary/test/ril/btbuild
+BTBUILD=vendor/qcom-source/test/ril/btbuild
 include $(RELPATHTOROOT)/$(BTBUILD)/bt.driver.mki
 
 -include ./${MAKEFILENAME}.depend.mki

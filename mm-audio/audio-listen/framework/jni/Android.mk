@@ -31,7 +31,7 @@ LOCAL_PROPRIETARY_MODULE := true
 
 LOCAL_C_INCLUDES += \
     $(LOCAL_PATH)/inc \
-    $(TOP)/vendor/qcom/proprietary/mm-audio/audio-listen/framework/service/inc \
+    $(TOP)/vendor/qcom-source/mm-audio/audio-listen/framework/service/inc \
     $(TOP)/hardware/libhardware/include \
     $(TOP)/hardware/libhardware_legacy/include \
     $(TARGET_OUT_HEADERS)/mm-audio/audio-listen

@@ -5,4 +5,4 @@
 
 # QC specific definitions & variables
 
-export QCPATH="vendor/qcom/proprietary"
+export QCPATH="vendor/qcom-source"

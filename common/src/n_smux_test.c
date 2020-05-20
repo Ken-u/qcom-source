@@ -12,7 +12,7 @@
 
 /*
  * Based upon code from:
- * vendor/qcom/proprietary/kernel-tests/msm_uart/msm_uart_test.c
+ * vendor/qcom-source/kernel-tests/msm_uart/msm_uart_test.c
  * Protocol documentaion: Documentation/arm/msm/serial_mux.txt
  */
 

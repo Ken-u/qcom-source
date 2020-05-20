@@ -1,11 +1,11 @@
 LOCAL_PATH := $(call my-dir)
 
 FUSION_APIS_PATH := ../../../modem-apis/$(FUSION_APIS_DIR)/api/libs/remote_apis
-ONCRPC_PATH := vendor/qcom/proprietary/oncrpc
+ONCRPC_PATH := vendor/qcom-source/oncrpc
 
-include vendor/qcom/proprietary/common/build/remote_api_makefiles/target_api_enables.mk
-include vendor/qcom/proprietary/common/build/remote_api_makefiles/remote_api_defines.mk
-include vendor/qcom/proprietary/oncrpc/oncrpc_defines.mk
+include vendor/qcom-source/common/build/remote_api_makefiles/target_api_enables.mk
+include vendor/qcom-source/common/build/remote_api_makefiles/remote_api_defines.mk
+include vendor/qcom-source/oncrpc/oncrpc_defines.mk
 
 # functions
 #$(call fusion-library-variables,library-prefix)

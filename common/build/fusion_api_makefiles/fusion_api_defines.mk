@@ -1,4 +1,4 @@
-include vendor/qcom/proprietary/common/build/remote_api_makefiles/target_api_enables.mk
+include vendor/qcom-source/common/build/remote_api_makefiles/target_api_enables.mk
 
 ifeq ($(AUTH_FUSION_ENABLE),1)
     defines_api_enable += -DFEATURE_EXPORT_AUTH_FUSION

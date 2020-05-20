@@ -24,7 +24,7 @@ LOCAL_PROPRIETARY_MODULE := true
 LOCAL_C_INCLUDES += \
     $(LOCAL_PATH)/inc \
     $(TOP)/hardware/libhardware/include \
-    $(TOP)/vendor/qcom/proprietary/mm-audio/audio-listen/hal/inc
+    $(TOP)/vendor/qcom-source/mm-audio/audio-listen/hal/inc
 
 LOCAL_COPY_HEADERS_TO   := mm-audio/audio-listen
 LOCAL_COPY_HEADERS      := \

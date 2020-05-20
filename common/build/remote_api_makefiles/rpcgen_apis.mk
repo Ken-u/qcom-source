@@ -28,7 +28,7 @@ define library-variables-commondefs
 
 include $(CLEAR_VARS)
 
-include vendor/qcom/proprietary/common/build/remote_api_makefiles/target_api_enables.mk
+include vendor/qcom-source/common/build/remote_api_makefiles/target_api_enables.mk
 include $(LOCAL_PATH)/rpcgen_api_defines.mk
 
 $(shell rm -rf $(TARGET_RPCGEN_APIS_PATH)/$1/xdr)

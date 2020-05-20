@@ -26,10 +26,10 @@ C_SRC =\
    stm2.c
 
 NEEDINC=\
-   vendor/qcom/proprietary/data/dsutils/inc\
-   vendor/qcom/proprietary/data/dss_new/src/platform/inc\
-   vendor/qcom/proprietary/diag/include\
-   vendor/qcom/proprietary/common/inc\
+   vendor/qcom-source/data/dsutils/inc\
+   vendor/qcom-source/data/dss_new/src/platform/inc\
+   vendor/qcom-source/diag/include\
+   vendor/qcom-source/common/inc\
    system/core/include\
    frameworks/base/include\
 
@@ -44,7 +44,7 @@ CFLAGS += -DFEATURE_Q_NO_SELF_QPTR
 
 LDFLAGS += -m32
 
-BTBUILD=vendor/qcom/proprietary/test/ril/btbuild
+BTBUILD=vendor/qcom-source/test/ril/btbuild
 include $(RELPATHTOROOT)/$(BTBUILD)/bt.driver.mki
 
 -include ./${MAKEFILENAME}.depend.mki

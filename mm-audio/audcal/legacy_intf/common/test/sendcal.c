@@ -25,7 +25,7 @@ another test app. If the UI (Audio HAL) is used to make a voice call,\n\
 playback or record the calibration sent using this app will most likely\n\
 be overwritten by the calibration currently in the ACDB for the device.\n\
 currently selected in the AHAL. Source for this test app can be found\n\
-under: vendor/qcom/proprietary/mm-audio/audcal/test/sendcal.c\n\
+under: vendor/qcom-source/mm-audio/audcal/test/sendcal.c\n\
 \n\
 Usage:	Start process:\n\
 	mm-audio-send-cal &\n\

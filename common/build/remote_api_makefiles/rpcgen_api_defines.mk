@@ -1,5 +1,5 @@
 #api enable defines
-include vendor/qcom/proprietary/common/build/remote_api_makefiles/target_api_enables.mk
+include vendor/qcom-source/common/build/remote_api_makefiles/target_api_enables.mk
 
 ifeq ($(ADC_RPCGEN_ENABLE),1)
 defines_api_enable += -DFEATURE_EXPORT_ADC_RPCGEN

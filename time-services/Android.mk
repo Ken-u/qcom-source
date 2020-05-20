@@ -17,7 +17,6 @@ commonIncludes := $(TARGET_OUT_HEADERS)/common/inc
 commonIncludes += $(TARGET_OUT_HEADERS)/oncrpc/inc
 
 LOCAL_C_INCLUDES := $(commonIncludes)
-LOCAL_C_INCLUDES += $(TARGET_OUT_HEADERS)/time-services
 LOCAL_C_INCLUDES += $(TARGET_OUT_HEADERS)/time_remote_atom/inc
 
 LOCAL_SRC_FILES := time_genoff_rpc.c
@@ -70,13 +69,16 @@ include $(CLEAR_VARS)
 
 commonIncludes := $(TARGET_OUT_HEADERS)/common/inc
 
+LOCAL_COPY_HEADERS_TO := time-services
+LOCAL_COPY_HEADERS := localdefs.h time_genoff_i.h time_service_v01.h
+
 LOCAL_C_INCLUDES := $(commonIncludes)
 LOCAL_C_INCLUDES += $(TARGET_OUT_HEADERS)/time-services
 
 LOCAL_SRC_FILES := time_genoff_qmi.c
 
 LOCAL_SHARED_LIBRARIES := libc
-LOCAL_SHARED_LIBRARIES += libcutils
+LOCAL_SHARED_LIBRARIES += libcutils liblog
 
 LOCAL_MODULE := libtime_genoff
 LOCAL_MODULE_TAGS := optional

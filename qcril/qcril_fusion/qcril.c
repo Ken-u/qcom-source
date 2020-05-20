@@ -49,7 +49,7 @@ when       who     what, where, why
 08/30/10   at      Removed QCRIL_EVT_INTERNAL_MMGSDI_FDN_PBM_RECORD_UPDATE
 08/27/10   js      Allow RIL_REQUEST_REPORT_STK_SERVICE_IS_RUNNING to be
                    processed in all radio states
-07/14/10   at      Added RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE
+07/14/10   at      Added RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION
 06/28/10   js      Support for GSTK QMI RIL
 05/13/10   at      Added respective callbacks for FEATURE_QCRIL_UIM_QMI
 03/05/10   sm      Added support for CM_PH_EVENT_PRL_INIT handling.
@@ -414,8 +414,8 @@ static qcril_dispatch_table_entry_type qcril_event_table[] =
   /* 7 - RIL_REQUEST_CHANGE_SIM_PIN2 */
   { QCRIL_REG_ALL_ACTIVE_STATES( RIL_REQUEST_CHANGE_SIM_PIN2, qcril_uim_request_change_pin ) },
 
-  /* 8 - RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE */
-  { QCRIL_REG_ALL_ACTIVE_STATES( RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE, qcril_uim_request_enter_perso_key ) },
+  /* 8 - RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION */
+  { QCRIL_REG_ALL_ACTIVE_STATES( RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION, qcril_uim_request_enter_perso_key ) },
 
   /* 11 - RIL_REQUEST_GET_IMSI */
   { QCRIL_REG_ALL_ACTIVE_STATES( RIL_REQUEST_GET_IMSI, qcril_uim_request_get_imsi ) },
@@ -446,8 +446,8 @@ static qcril_dispatch_table_entry_type qcril_event_table[] =
   /* 7 - RIL_REQUEST_CHANGE_SIM_PIN2 */
   { QCRIL_REG_ALL_ACTIVE_STATES( RIL_REQUEST_CHANGE_SIM_PIN2, qcril_mmgsdi_request_change_pin ) },
 
-  /* 8 - RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE */
-  { QCRIL_REG_ALL_ACTIVE_STATES( RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE, qcril_mmgsdi_request_enter_perso_key ) },
+  /* 8 - RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION */
+  { QCRIL_REG_ALL_ACTIVE_STATES( RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION, qcril_mmgsdi_request_enter_perso_key ) },
 
   /* 11 - RIL_REQUEST_GET_IMSI */
   { QCRIL_REG_SIM_OR_RUIM_READY_STATES( RIL_REQUEST_GET_IMSI, qcril_mmgsdi_request_get_imsi ) },

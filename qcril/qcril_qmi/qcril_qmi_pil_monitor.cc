@@ -227,7 +227,7 @@ int qcril_qmi_pil_monitor::get_pil_adsp_device()
 
     while(dir_trav != NULL)
     {
-        snprintf( device, sizeof(device), QCRIL_QMI_PIL_DEVICE_DIR"/%s/"QCRIL_QMI_PIL_DEVICE_NAME_FILE, dir_trav->dir_name);
+        snprintf( device, sizeof(device), "%s/%s/%s", QCRIL_QMI_PIL_DEVICE_DIR, dir_trav->dir_name, QCRIL_QMI_PIL_DEVICE_NAME_FILE);
         fd = fopen(device, "r");
         if (fd != NULL)
         {
@@ -240,7 +240,7 @@ int qcril_qmi_pil_monitor::get_pil_adsp_device()
                              strlen(QCRIL_PIL_ADSP_DEVICE_NAME)))
             {
                 ret = 1;
-                snprintf(pil_adsp_device, sizeof(pil_adsp_device), QCRIL_QMI_PIL_DEVICE_DIR"/%s/"QCRIL_QMI_PIL_DEVICE_STATE_FILE, dir_trav->dir_name);
+                snprintf(pil_adsp_device, sizeof(pil_adsp_device), "%s/%s/%s", QCRIL_QMI_PIL_DEVICE_DIR, dir_trav->dir_name, QCRIL_QMI_PIL_DEVICE_STATE_FILE);
                 fclose(fd);
                 break;
             }

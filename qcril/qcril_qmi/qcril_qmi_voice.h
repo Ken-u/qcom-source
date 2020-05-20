@@ -931,5 +931,10 @@ boolean qcril_qmi_voice_is_ims_call
     const qcril_qmi_voice_voip_call_info_entry_type * call_info_entry
 );
 
+void qcril_qmi_voice_last_call_failure_cause_lock();
+void qcril_qmi_voice_last_call_failure_cause_unlock();
+void qcril_qmi_voice_info_lock();
+void qcril_qmi_voice_info_unlock();
+
 #endif /* QCRIL_QMI_VOICE_H */
 

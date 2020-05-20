@@ -1379,7 +1379,7 @@ void qcril_uim_request_get_pin_status
 ===========================================================================*/
 /*!
     @brief
-    Handles RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE requests
+    Handles RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION requests
     from the framework
 
     @return
@@ -1395,7 +1395,7 @@ void qcril_uim_request_enter_perso_key
   qcril_modem_id_e_type                  modem_id = QCRIL_MAX_MODEM_ID - 1;
   int                                    res;
   qmi_uim_depersonalization_params_type  perso_params;
-#ifdef RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE
+#ifdef RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION
 #if (RIL_VERSION >= 9)
   const char *                           perso_type = NULL;
   const char *                           depersonalization_code = NULL;
@@ -1404,7 +1404,7 @@ void qcril_uim_request_enter_perso_key
 #endif /* RIL_VERSION >= 9 */
 #else
   const char *                           depersonalization_code = NULL;
-#endif /* RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE */
+#endif /* RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION */
   qcril_uim_original_request_type      * original_request_ptr = NULL;
 
   QCRIL_LOG_INFO( "%s\n", __FUNCTION__);
@@ -1416,7 +1416,7 @@ void qcril_uim_request_enter_perso_key
     return;
   }
 
-#ifdef RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE
+#ifdef RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION
 #if (RIL_VERSION >= 9)
   perso_type = ((const char **) params_ptr->data)[0];
   depersonalization_code = ((const char **) params_ptr->data)[1];
@@ -1442,12 +1442,12 @@ void qcril_uim_request_enter_perso_key
     QCRIL_ASSERT(0);
     return;
   }
-#endif /* RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE */
+#endif /* RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION */
 
   /* Add entry to ReqList */
   QCRIL_UIM_ADD_ENTRY_TO_REQUEST_LIST(params_ptr);
 
-#ifdef RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE
+#ifdef RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION
   /* Perso feature */
 #if (RIL_VERSION >= 9)
   switch (atoi(perso_type))
@@ -1501,17 +1501,17 @@ void qcril_uim_request_enter_perso_key
   }
 #else
   perso_params.perso_feature = QMI_UIM_PERSO_FEATURE_GW_NW;
-#endif /* RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE */
+#endif /* RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION */
 
 
-#if defined(RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE) && (RIL_VERSION < 9)
+#if defined(RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION) && (RIL_VERSION < 9)
   /* Return the number of remaining retries if perso key is empty */
   if(strlen(perso_request_ptr->depersonalizationCode) == 0)
   {
 #else
   if(strlen(depersonalization_code) == 0)
   {
-#endif /* defined(RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE) && (RIL_VERSION < 9) */
+#endif /* defined(RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION) && (RIL_VERSION < 9) */
     uint8 slot        = 0;
     int   num_retries = 0;
     uint8 i           = 0;
@@ -1551,7 +1551,7 @@ void qcril_uim_request_enter_perso_key
   /* Perso operation */
   perso_params.perso_operation = QMI_UIM_PERSO_OP_DEACTIVATE;
 
-#if defined(RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE) && (RIL_VERSION < 9)
+#if defined(RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION) && (RIL_VERSION < 9)
   /* New PIN value */
   perso_params.ck_data.data_ptr = (unsigned char*)perso_request_ptr->depersonalizationCode;
   perso_params.ck_data.data_len = strlen(perso_request_ptr->depersonalizationCode);
@@ -1559,7 +1559,7 @@ void qcril_uim_request_enter_perso_key
   /* New PIN value */
   perso_params.ck_data.data_ptr = depersonalization_code;
   perso_params.ck_data.data_len = strlen(depersonalization_code);
-#endif /* defined(RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE) && (RIL_VERSION < 9) */
+#endif /* defined(RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION) && (RIL_VERSION < 9) */
 
 
   /* Allocate original request */

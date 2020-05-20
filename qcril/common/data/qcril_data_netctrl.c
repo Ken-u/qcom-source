@@ -269,6 +269,7 @@ typedef struct
 #define QCRIL_DATA_IS_RIL_RADIO_TECH_CDMA(t)  (QCRIL_DATA_IS_RIL_RADIO_TECH_CDMA_1X_EVDO(t) ||        \
                                                (t == QCRIL_DATA_RIL_RADIO_TECH_EHRPD))
 
+#if (RIL_QCOM_VERSION >= 3)
 #define QCRIL_DATA_IS_RIL_RADIO_TECH_3GPP_EHRPD(t)    ((t == QCRIL_DATA_RIL_RADIO_TECH_GPRS)    || \
                                                        (t == QCRIL_DATA_RIL_RADIO_TECH_HSDPA)   || \
                                                        (t == QCRIL_DATA_RIL_RADIO_TECH_HSUPA)   || \
@@ -278,8 +279,17 @@ typedef struct
                                                        (t == QCRIL_DATA_RIL_RADIO_TECH_TDSCDMA) || \
                                                        (t == QCRIL_DATA_RIL_RADIO_TECH_EHRPD))
 
-#endif /* ((RIL_QCOM_VERSION >= 1) || (RIL_VERSION >= 6)) */
+#else /* RIL_QCOM_VERSION < 3 */
+#define QCRIL_DATA_IS_RIL_RADIO_TECH_3GPP_EHRPD(t)    ((t == QCRIL_DATA_RIL_RADIO_TECH_GPRS)    || \
+                                                       (t == QCRIL_DATA_RIL_RADIO_TECH_HSDPA)   || \
+                                                       (t == QCRIL_DATA_RIL_RADIO_TECH_HSUPA)   || \
+                                                       (t == QCRIL_DATA_RIL_RADIO_TECH_HSPA)    || \
+                                                       (t == QCRIL_DATA_RIL_RADIO_TECH_HSPAP)   || \
+                                                       (t == QCRIL_DATA_RIL_RADIO_TECH_EDGE)    || \
+                                                       (t == QCRIL_DATA_RIL_RADIO_TECH_EHRPD))
 
+#endif
+#endif /* ((RIL_QCOM_VERSION >= 1) || (RIL_VERSION >= 6)) */
 
 /*! @brief Typedef variables internal to module qcril_data.c
 */
@@ -526,7 +536,7 @@ static void qcril_data_util_create_setup_rsp
 static int qcril_data_iface_go_dormant
 (
   int qmi_wds_hndl,
-  dsi_ip_family_t ip_family;
+  dsi_ip_family_t ip_family
 );
 
 static int qcril_data_iface_set_mtu
@@ -7186,8 +7196,7 @@ LOCAL boolean qcril_data_is_attach_required
 
   /* Check APN*/
   if ((!(prof_params.umts_profile_params.param_mask &
-               QMI_WDS_UMTS_PROFILE_APN_NAME_PARAM_MASK)) ||
-            NULL == prof_params.umts_profile_params.apn_name)
+               QMI_WDS_UMTS_PROFILE_APN_NAME_PARAM_MASK)))
   {
     /* Modem APN parameter not available */
     QCRIL_LOG_DEBUG("%s", "APN information not available, we need to do LTE attach");

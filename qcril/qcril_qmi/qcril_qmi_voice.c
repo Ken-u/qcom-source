@@ -193,6 +193,8 @@ static void qcril_qmi_voice_request_query_colp
   qcril_request_return_type *const ret_ptr /*!< Output parameter */
 );
 
+void qcril_qmi_voice_send_hangup_on_call(int conn_index);
+void qcril_qmi_voice_get_colp_resp_hdlr(const qcril_request_params_type *const params_ptr);
 /*  Function handler table for QCRIL_EVT_IMS_SOCKET_REQ_SUPP_SVC_STATUS
     Handler functions for operations IMS__SUPP_SVC_OPERATION_TYPE__ACTIVATE
     and IMS__SUPP_SVC_OPERATION_TYPE__DEACTIVATE for each SuppSvcFacilityType.
@@ -298,6 +300,7 @@ static int qcril_qmi_voice_handle_ril_call_entry(RIL_Call *info_ptr);
 static int qcril_qmi_voice_is_cdma_voice_emergency_calls_present(qcril_qmi_voice_voip_call_info_entry_type **cdma_voice_call_info_entry,
                                                                  qcril_qmi_voice_voip_call_info_entry_type **cdma_no_srv_emer_call_info_entry);
 
+void qcril_qmi_voice_set_audio_call_type(const voice_call_info2_type_v02* iter_call_info, qcril_qmi_voice_voip_call_info_entry_type *call_info_entry);
 
 static void qcril_qmi_voice_respond_pending_hangup_ril_response(uint8_t call_id);
 static void qmi_ril_voice_pending_1x_num_timeout(void * param);

@@ -720,6 +720,7 @@ void qcril_qmi_ims_parse_packed_msg(Ims__MsgType type, Ims__MsgId message_id, co
         {
             *event_ptr = QCRIL_EVT_IMS_SOCKET_REQ_QUERY_VT_CALL_QUALITY;
         }
+#ifdef QCRIL_PROTOBUF_BUILD_ENABLED
         else if (IMS__MSG_ID__REQUEST_SET_VT_CALL_QUALITY == message_id &&
                  IMS__MSG_TYPE__REQUEST == type)
         {
@@ -730,6 +731,7 @@ void qcril_qmi_ims_parse_packed_msg(Ims__MsgType type, Ims__MsgId message_id, co
             *unpacked_msg_size_ptr = sizeof(Ims__VideoCallQuality);
             *event_ptr = QCRIL_EVT_IMS_SOCKET_REQ_SET_VT_CALL_QUALITY;
         }
+#endif
         else
         {
             QCRIL_LOG_DEBUG("NULL data");

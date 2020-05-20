@@ -15,7 +15,9 @@
 #ifndef QCRIL_QMI_IMS_IF_PB_H
 #define QCRIL_QMI_IMS_IF_PB_H
 
-#ifndef QCRIL_PROTOBUF_BUILD_ENABLED
+#ifdef QCRIL_PROTOBUF_BUILD_ENABLED
+#include "imsIF.pb-c.h"
+#else
 typedef struct _Ims__MsgTag Ims__MsgTag;
 typedef struct _Ims__CallFailCauseResponse Ims__CallFailCauseResponse;
 typedef struct _Ims__StatusForAccessTech Ims__StatusForAccessTech;
@@ -681,12 +683,15 @@ struct  _Ims__SuppSvcResponse
 };
 #define IMS__SUPP_SVC_RESPONSE__INIT { NULL, 0,0, 0,0, NULL, 0,NULL }
 
+#ifdef QCRIL_PROTOBUF_BUILD_ENABLED
 struct  _Ims__VideoCallQuality
 {
   ProtobufCMessage base;
   protobuf_c_boolean has_quality;
   Ims__Quality quality;
 };
+#endif
+
 #define IMS__VIDEO_CALL_QUALITY__INIT { NULL, 0,0 }
 
 #endif

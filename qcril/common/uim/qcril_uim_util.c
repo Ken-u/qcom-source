@@ -1201,7 +1201,7 @@ void qcril_uim_remove_non_provisioning_session
       if (!qcril_uim_is_isim_aid(&qcril_uim_non_prov_session_list[i].session_info.aid))
       {
         QCRIL_LOG_VERBOSE("Non prov session to close found - index: 0x%x, token: %d",
-                          index, qcril_log_get_token_id(token));
+                          i, qcril_log_get_token_id(token));
 
         close_params.session_info = qcril_uim_non_prov_session_list[i].session_info;
         qcril_qmi_uim_close_session(qcril_uim.qmi_handle,

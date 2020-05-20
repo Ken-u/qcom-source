@@ -17,7 +17,6 @@
 #include "ip_multimedia_subsystem_settings_v01.h"
 #include "qcril_reqlist.h"
 #include "qcril_qmi_client.h"
-
 //===========================================================================
 //                    INTERNAL DEFINITIONS AND TYPES
 //===========================================================================
@@ -379,6 +378,7 @@ void qcril_qmi_imss_request_set_vt_call_quality
  qcril_request_return_type *const ret_ptr /*!< Output parameter */
 )
 {
+#ifdef QCRIL_PROTOBUF_BUILD_ENABLED
     Ims__VideoCallQuality    *ims_vcq_data_ptr = NULL;
     IxErrnoType               qmi_client_error;
     uint32                    user_data;
@@ -475,7 +475,7 @@ void qcril_qmi_imss_request_set_vt_call_quality
     {
         qcril_qmi_ims__video_call_quality__free_unpacked(ims_vcq_data_ptr, NULL);
     }
-
+#endif
     QCRIL_LOG_FUNC_RETURN();
 } // qcril_qmi_imss_request_set_vt_call_quality
 
@@ -612,6 +612,7 @@ void qcril_qmi_imss_get_qipcall_config_resp_hdlr
   const qcril_request_params_type *const params_ptr
 )
 {
+#ifdef QCRIL_PROTOBUF_BUILD_ENABLED
     ims_settings_get_qipcall_config_rsp_msg_v01 *resp = NULL;
     RIL_Errno ril_err = RIL_E_GENERIC_FAILURE;
 
@@ -679,7 +680,7 @@ void qcril_qmi_imss_get_qipcall_config_resp_hdlr
     {
         QCRIL_LOG_ERROR("params_ptr is NULL");
     }
-
+#endif
     QCRIL_LOG_FUNC_RETURN();
 } // qcril_qmi_imss_get_qipcall_config_resp_hdlr
 

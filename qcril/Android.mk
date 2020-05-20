@@ -20,7 +20,7 @@ ifeq ($(call is-board-platform-in-list,msm7627_6x $(QCRIL_BOARD_PLATFORM_LIST)),
 endif
 
 ifeq ($(call is-board-platform-in-list,$(QCRIL_BOARD_PLATFORM_LIST)),true)
-
+  PROTOBUF_SUPPORTED=1
   ifdef DSDA_BUILD_SECOND_RIL
     ## Compile a 2nd library for some DSDA targets
     QCRIL_DSDA_INSTANCE=2

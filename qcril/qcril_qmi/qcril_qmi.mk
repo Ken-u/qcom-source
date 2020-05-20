@@ -104,6 +104,8 @@ endif
 
 LOCAL_SHARED_LIBRARIES := libdsutils  # must preceed libcutils in ICS build
 LOCAL_SHARED_LIBRARIES += libcutils
+LOCAL_SHARED_LIBRARIES += liblog
+LOCAL_SHARED_LIBRARIES += libaudioclient
 LOCAL_SHARED_LIBRARIES += libutils
 LOCAL_SHARED_LIBRARIES += libril
 LOCAL_SHARED_LIBRARIES += librilutils
@@ -119,7 +121,6 @@ LOCAL_SHARED_LIBRARIES += libtime_genoff
 LOCAL_SHARED_LIBRARIES += libmedia
 LOCAL_SHARED_LIBRARIES += libbinder
 LOCAL_SHARED_LIBRARIES += libsqlite
-
 
 ifeq ($(call is-board-platform-in-list,msm7630_surf msm7630_fusion msm8660 msm8960 msm8974 msm8610 msm8226 msm7627_surf msm7627a),true)
 # These targets have route look up available on modem
@@ -171,6 +172,7 @@ LOCAL_C_INCLUDES += $(TARGET_OUT_HEADERS)/qmi/inc/
 ifdef PROTOBUF_SUPPORTED
 LOCAL_C_INCLUDES += $(TARGET_OUT_HEADERS)/protobuf-c/include/
 endif
+LOCAL_HEADER_LIBRARIES += libprotobuf-c-headers
 LOCAL_C_INCLUDES += $(TARGET_OUT_HEADERS)/time-services/
 
 # For API Definitions and enables
@@ -193,6 +195,7 @@ LOCAL_CFLAGS += -DFEATURE_QCRIL_TOOLKIT_SKIP_SETUP_EVT_LIST_FILTER
 endif
 
 ifdef PROTOBUF_SUPPORTED
+$(warning xx ENABLE PROTOBUF_SUPPORTED)
 LOCAL_CFLAGS += -DQCRIL_PROTOBUF_BUILD_ENABLED
 endif
 

@@ -828,7 +828,7 @@ static int qdp_match_3gpp_profile_params
         case QDP_RIL_APN:
           if ((!(prof_params->umts_profile_params.param_mask &
                  QMI_WDS_UMTS_PROFILE_APN_NAME_PARAM_MASK)) ||
-              NULL == prof_params->umts_profile_params.apn_name)
+              (0 == std_strlen(prof_params->umts_profile_params.apn_name)))
           {
             QDP_LOG_DEBUG("%s","modem profile parameter APN not available");
             *match_found = FALSE;
@@ -1135,7 +1135,7 @@ static int qdp_match_3gpp2_profile_params
         case QDP_RIL_APN:
           if ((!(prof_params->cdma_profile_params.param_mask &
                  QMI_WDS_CDMA_PROFILE_APN_STRING_PARAM_MASK)) ||
-              NULL == prof_params->cdma_profile_params.apn_name)
+              (0 == std_strlen(prof_params->umts_profile_params.apn_name)))
           {
             QDP_LOG_DEBUG("modem profile parameter APN is NULL. param_mask = [%p]",
                           prof_params->cdma_profile_params.param_mask);
@@ -1172,7 +1172,7 @@ static int qdp_match_3gpp2_profile_params
         case QDP_RIL_NAI:
           if ((!(prof_params->cdma_profile_params.param_mask &
                  QMI_WDS_CDMA_PROFILE_USERNAME_PARAM_MASK)) ||
-              NULL == prof_params->cdma_profile_params.username)
+              (0 == std_strlen(prof_params->umts_profile_params.apn_name)))
           {
             QDP_LOG_DEBUG("%s","modem profile parameter NAI is NULL");
             *match_found = FALSE;

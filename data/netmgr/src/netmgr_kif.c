@@ -81,7 +81,7 @@ when       who        what, where, why
 #ifdef FEATURE_GB_NET_UTILS
 #include "ifc_utils.h"
 #else
-#include "ifc.h"
+#include <netutils/ifc.h>
 #endif
 #endif
 

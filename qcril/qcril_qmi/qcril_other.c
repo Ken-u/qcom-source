@@ -318,6 +318,32 @@ void qcril_other_request_oem_hook_neighboring_cells_info_cb
   qmi_client_error_type        transp_err
 );
 
+void qcril_other_request_get_nv2499
+(
+  const qcril_request_params_type *const params_ptr,
+  qcril_request_return_type *const ret_ptr /*!< Output parameter */
+);
+void qcril_other_request_get_sn
+(
+  const qcril_request_params_type *const params_ptr,
+  qcril_request_return_type *const ret_ptr // Output parameter
+);
+void qcril_other_request_get_qcn
+(
+  const qcril_request_params_type *const params_ptr,
+  qcril_request_return_type *const ret_ptr /*!< Output parameter */
+);
+void qcril_qmi_nas_dms_request_hw_version
+(
+  const qcril_request_params_type *const params_ptr,
+  qcril_request_return_type *const ret_ptr // Output parameter
+);
+void qcril_other_request_get_flag
+(
+  const qcril_request_params_type *const params_ptr,
+  qcril_request_return_type *const ret_ptr // Output parameter
+);
+
 void qmi_ril_get_property_value_helper(const char *property_name,
                                        char *property_value,
                                        const char *default_property_value);

@@ -813,7 +813,7 @@ void qcril_mmgsdi_request_get_pin_status
 ===========================================================================*/
 /*!
     @brief
-    Handles RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE.
+    Handles RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION.
 
     @return
     None.
@@ -870,7 +870,7 @@ void qcril_mmgsdi_request_enter_perso_key
 
   switch (params_ptr->event_id)
   {
-  case RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE:
+  case RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION:
     perso_dck.feature = GSDI_PERSO_NW;
     break;
   default:

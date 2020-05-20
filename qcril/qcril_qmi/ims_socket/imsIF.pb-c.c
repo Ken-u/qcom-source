@@ -55,21 +55,21 @@ void   ims__msg_tag__init
 size_t ims__msg_tag__get_packed_size
                      (const Ims__MsgTag *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__msg_tag__descriptor);
+  assert (message->base.descriptor == &ims__msg_tag__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__msg_tag__pack
                      (const Ims__MsgTag *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__msg_tag__descriptor);
+  assert (message->base.descriptor == &ims__msg_tag__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__msg_tag__pack_to_buffer
                      (const Ims__MsgTag *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__msg_tag__descriptor);
+  assert (message->base.descriptor == &ims__msg_tag__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__MsgTag *
@@ -86,7 +86,7 @@ void   ims__msg_tag__free_unpacked
                      (Ims__MsgTag *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__msg_tag__descriptor);
+  assert (message->base.descriptor == &ims__msg_tag__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__call_fail_cause_response__init
@@ -98,21 +98,21 @@ void   ims__call_fail_cause_response__init
 size_t ims__call_fail_cause_response__get_packed_size
                      (const Ims__CallFailCauseResponse *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_fail_cause_response__descriptor);
+  assert (message->base.descriptor == &ims__call_fail_cause_response__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__call_fail_cause_response__pack
                      (const Ims__CallFailCauseResponse *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_fail_cause_response__descriptor);
+  assert (message->base.descriptor == &ims__call_fail_cause_response__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__call_fail_cause_response__pack_to_buffer
                      (const Ims__CallFailCauseResponse *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_fail_cause_response__descriptor);
+  assert (message->base.descriptor == &ims__call_fail_cause_response__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__CallFailCauseResponse *
@@ -129,7 +129,7 @@ void   ims__call_fail_cause_response__free_unpacked
                      (Ims__CallFailCauseResponse *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_fail_cause_response__descriptor);
+  assert (message->base.descriptor == &ims__call_fail_cause_response__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__status_for_access_tech__init
@@ -141,21 +141,21 @@ void   ims__status_for_access_tech__init
 size_t ims__status_for_access_tech__get_packed_size
                      (const Ims__StatusForAccessTech *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__status_for_access_tech__descriptor);
+  assert (message->base.descriptor == &ims__status_for_access_tech__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__status_for_access_tech__pack
                      (const Ims__StatusForAccessTech *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__status_for_access_tech__descriptor);
+  assert (message->base.descriptor == &ims__status_for_access_tech__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__status_for_access_tech__pack_to_buffer
                      (const Ims__StatusForAccessTech *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__status_for_access_tech__descriptor);
+  assert (message->base.descriptor == &ims__status_for_access_tech__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__StatusForAccessTech *
@@ -172,7 +172,7 @@ void   ims__status_for_access_tech__free_unpacked
                      (Ims__StatusForAccessTech *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__status_for_access_tech__descriptor);
+  assert (message->base.descriptor == &ims__status_for_access_tech__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__info__init
@@ -184,21 +184,21 @@ void   ims__info__init
 size_t ims__info__get_packed_size
                      (const Ims__Info *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__info__descriptor);
+  assert (message->base.descriptor == &ims__info__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__info__pack
                      (const Ims__Info *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__info__descriptor);
+  assert (message->base.descriptor == &ims__info__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__info__pack_to_buffer
                      (const Ims__Info *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__info__descriptor);
+  assert (message->base.descriptor == &ims__info__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__Info *
@@ -215,7 +215,7 @@ void   ims__info__free_unpacked
                      (Ims__Info *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__info__descriptor);
+  assert (message->base.descriptor == &ims__info__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__srv_status_list__init
@@ -227,21 +227,21 @@ void   ims__srv_status_list__init
 size_t ims__srv_status_list__get_packed_size
                      (const Ims__SrvStatusList *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__srv_status_list__descriptor);
+  assert (message->base.descriptor == &ims__srv_status_list__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__srv_status_list__pack
                      (const Ims__SrvStatusList *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__srv_status_list__descriptor);
+  assert (message->base.descriptor == &ims__srv_status_list__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__srv_status_list__pack_to_buffer
                      (const Ims__SrvStatusList *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__srv_status_list__descriptor);
+  assert (message->base.descriptor == &ims__srv_status_list__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__SrvStatusList *
@@ -258,7 +258,7 @@ void   ims__srv_status_list__free_unpacked
                      (Ims__SrvStatusList *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__srv_status_list__descriptor);
+  assert (message->base.descriptor == &ims__srv_status_list__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__call_details__init
@@ -270,21 +270,21 @@ void   ims__call_details__init
 size_t ims__call_details__get_packed_size
                      (const Ims__CallDetails *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_details__descriptor);
+  assert (message->base.descriptor == &ims__call_details__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__call_details__pack
                      (const Ims__CallDetails *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_details__descriptor);
+  assert (message->base.descriptor == &ims__call_details__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__call_details__pack_to_buffer
                      (const Ims__CallDetails *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_details__descriptor);
+  assert (message->base.descriptor == &ims__call_details__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__CallDetails *
@@ -301,7 +301,7 @@ void   ims__call_details__free_unpacked
                      (Ims__CallDetails *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_details__descriptor);
+  assert (message->base.descriptor == &ims__call_details__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__call_modify__init
@@ -313,21 +313,21 @@ void   ims__call_modify__init
 size_t ims__call_modify__get_packed_size
                      (const Ims__CallModify *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_modify__descriptor);
+  assert (message->base.descriptor == &ims__call_modify__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__call_modify__pack
                      (const Ims__CallModify *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_modify__descriptor);
+  assert (message->base.descriptor == &ims__call_modify__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__call_modify__pack_to_buffer
                      (const Ims__CallModify *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_modify__descriptor);
+  assert (message->base.descriptor == &ims__call_modify__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__CallModify *
@@ -344,7 +344,7 @@ void   ims__call_modify__free_unpacked
                      (Ims__CallModify *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_modify__descriptor);
+  assert (message->base.descriptor == &ims__call_modify__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__call_list__call__init
@@ -362,21 +362,21 @@ void   ims__call_list__init
 size_t ims__call_list__get_packed_size
                      (const Ims__CallList *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_list__descriptor);
+  assert (message->base.descriptor == &ims__call_list__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__call_list__pack
                      (const Ims__CallList *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_list__descriptor);
+  assert (message->base.descriptor == &ims__call_list__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__call_list__pack_to_buffer
                      (const Ims__CallList *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_list__descriptor);
+  assert (message->base.descriptor == &ims__call_list__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__CallList *
@@ -393,7 +393,7 @@ void   ims__call_list__free_unpacked
                      (Ims__CallList *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_list__descriptor);
+  assert (message->base.descriptor == &ims__call_list__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__dial__init
@@ -405,21 +405,21 @@ void   ims__dial__init
 size_t ims__dial__get_packed_size
                      (const Ims__Dial *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__dial__descriptor);
+  assert (message->base.descriptor == &ims__dial__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__dial__pack
                      (const Ims__Dial *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__dial__descriptor);
+  assert (message->base.descriptor == &ims__dial__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__dial__pack_to_buffer
                      (const Ims__Dial *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__dial__descriptor);
+  assert (message->base.descriptor == &ims__dial__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__Dial *
@@ -436,7 +436,7 @@ void   ims__dial__free_unpacked
                      (Ims__Dial *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__dial__descriptor);
+  assert (message->base.descriptor == &ims__dial__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__hangup__init
@@ -448,21 +448,21 @@ void   ims__hangup__init
 size_t ims__hangup__get_packed_size
                      (const Ims__Hangup *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__hangup__descriptor);
+  assert (message->base.descriptor == &ims__hangup__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__hangup__pack
                      (const Ims__Hangup *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__hangup__descriptor);
+  assert (message->base.descriptor == &ims__hangup__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__hangup__pack_to_buffer
                      (const Ims__Hangup *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__hangup__descriptor);
+  assert (message->base.descriptor == &ims__hangup__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__Hangup *
@@ -479,7 +479,7 @@ void   ims__hangup__free_unpacked
                      (Ims__Hangup *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__hangup__descriptor);
+  assert (message->base.descriptor == &ims__hangup__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__deflect_call__init
@@ -491,21 +491,21 @@ void   ims__deflect_call__init
 size_t ims__deflect_call__get_packed_size
                      (const Ims__DeflectCall *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__deflect_call__descriptor);
+  assert (message->base.descriptor == &ims__deflect_call__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__deflect_call__pack
                      (const Ims__DeflectCall *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__deflect_call__descriptor);
+  assert (message->base.descriptor == &ims__deflect_call__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__deflect_call__pack_to_buffer
                      (const Ims__DeflectCall *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__deflect_call__descriptor);
+  assert (message->base.descriptor == &ims__deflect_call__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__DeflectCall *
@@ -522,7 +522,7 @@ void   ims__deflect_call__free_unpacked
                      (Ims__DeflectCall *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__deflect_call__descriptor);
+  assert (message->base.descriptor == &ims__deflect_call__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__clir__init
@@ -534,21 +534,21 @@ void   ims__clir__init
 size_t ims__clir__get_packed_size
                      (const Ims__Clir *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__clir__descriptor);
+  assert (message->base.descriptor == &ims__clir__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__clir__pack
                      (const Ims__Clir *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__clir__descriptor);
+  assert (message->base.descriptor == &ims__clir__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__clir__pack_to_buffer
                      (const Ims__Clir *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__clir__descriptor);
+  assert (message->base.descriptor == &ims__clir__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__Clir *
@@ -565,7 +565,7 @@ void   ims__clir__free_unpacked
                      (Ims__Clir *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__clir__descriptor);
+  assert (message->base.descriptor == &ims__clir__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__answer__init
@@ -577,21 +577,21 @@ void   ims__answer__init
 size_t ims__answer__get_packed_size
                      (const Ims__Answer *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__answer__descriptor);
+  assert (message->base.descriptor == &ims__answer__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__answer__pack
                      (const Ims__Answer *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__answer__descriptor);
+  assert (message->base.descriptor == &ims__answer__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__answer__pack_to_buffer
                      (const Ims__Answer *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__answer__descriptor);
+  assert (message->base.descriptor == &ims__answer__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__Answer *
@@ -608,7 +608,7 @@ void   ims__answer__free_unpacked
                      (Ims__Answer *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__answer__descriptor);
+  assert (message->base.descriptor == &ims__answer__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__switch_waiting_or_holding_and_active__init
@@ -620,21 +620,21 @@ void   ims__switch_waiting_or_holding_and_active__init
 size_t ims__switch_waiting_or_holding_and_active__get_packed_size
                      (const Ims__SwitchWaitingOrHoldingAndActive *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__switch_waiting_or_holding_and_active__descriptor);
+  assert (message->base.descriptor == &ims__switch_waiting_or_holding_and_active__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__switch_waiting_or_holding_and_active__pack
                      (const Ims__SwitchWaitingOrHoldingAndActive *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__switch_waiting_or_holding_and_active__descriptor);
+  assert (message->base.descriptor == &ims__switch_waiting_or_holding_and_active__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__switch_waiting_or_holding_and_active__pack_to_buffer
                      (const Ims__SwitchWaitingOrHoldingAndActive *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__switch_waiting_or_holding_and_active__descriptor);
+  assert (message->base.descriptor == &ims__switch_waiting_or_holding_and_active__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__SwitchWaitingOrHoldingAndActive *
@@ -651,7 +651,7 @@ void   ims__switch_waiting_or_holding_and_active__free_unpacked
                      (Ims__SwitchWaitingOrHoldingAndActive *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__switch_waiting_or_holding_and_active__descriptor);
+  assert (message->base.descriptor == &ims__switch_waiting_or_holding_and_active__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__mute__init
@@ -663,21 +663,21 @@ void   ims__mute__init
 size_t ims__mute__get_packed_size
                      (const Ims__Mute *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__mute__descriptor);
+  assert (message->base.descriptor == &ims__mute__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__mute__pack
                      (const Ims__Mute *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__mute__descriptor);
+  assert (message->base.descriptor == &ims__mute__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__mute__pack_to_buffer
                      (const Ims__Mute *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__mute__descriptor);
+  assert (message->base.descriptor == &ims__mute__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__Mute *
@@ -694,7 +694,7 @@ void   ims__mute__free_unpacked
                      (Ims__Mute *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__mute__descriptor);
+  assert (message->base.descriptor == &ims__mute__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__dtmf__init
@@ -706,21 +706,21 @@ void   ims__dtmf__init
 size_t ims__dtmf__get_packed_size
                      (const Ims__Dtmf *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__dtmf__descriptor);
+  assert (message->base.descriptor == &ims__dtmf__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__dtmf__pack
                      (const Ims__Dtmf *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__dtmf__descriptor);
+  assert (message->base.descriptor == &ims__dtmf__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__dtmf__pack_to_buffer
                      (const Ims__Dtmf *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__dtmf__descriptor);
+  assert (message->base.descriptor == &ims__dtmf__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__Dtmf *
@@ -737,7 +737,7 @@ void   ims__dtmf__free_unpacked
                      (Ims__Dtmf *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__dtmf__descriptor);
+  assert (message->base.descriptor == &ims__dtmf__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__registration__init
@@ -749,21 +749,21 @@ void   ims__registration__init
 size_t ims__registration__get_packed_size
                      (const Ims__Registration *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__registration__descriptor);
+  assert (message->base.descriptor == &ims__registration__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__registration__pack
                      (const Ims__Registration *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__registration__descriptor);
+  assert (message->base.descriptor == &ims__registration__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__registration__pack_to_buffer
                      (const Ims__Registration *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__registration__descriptor);
+  assert (message->base.descriptor == &ims__registration__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__Registration *
@@ -780,7 +780,7 @@ void   ims__registration__free_unpacked
                      (Ims__Registration *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__registration__descriptor);
+  assert (message->base.descriptor == &ims__registration__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__ring_back_tone__init
@@ -792,21 +792,21 @@ void   ims__ring_back_tone__init
 size_t ims__ring_back_tone__get_packed_size
                      (const Ims__RingBackTone *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__ring_back_tone__descriptor);
+  assert (message->base.descriptor == &ims__ring_back_tone__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__ring_back_tone__pack
                      (const Ims__RingBackTone *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__ring_back_tone__descriptor);
+  assert (message->base.descriptor == &ims__ring_back_tone__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__ring_back_tone__pack_to_buffer
                      (const Ims__RingBackTone *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__ring_back_tone__descriptor);
+  assert (message->base.descriptor == &ims__ring_back_tone__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__RingBackTone *
@@ -823,7 +823,7 @@ void   ims__ring_back_tone__free_unpacked
                      (Ims__RingBackTone *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__ring_back_tone__descriptor);
+  assert (message->base.descriptor == &ims__ring_back_tone__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__ifconnected__init
@@ -835,21 +835,21 @@ void   ims__ifconnected__init
 size_t ims__ifconnected__get_packed_size
                      (const Ims__IFConnected *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__ifconnected__descriptor);
+  assert (message->base.descriptor == &ims__ifconnected__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__ifconnected__pack
                      (const Ims__IFConnected *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__ifconnected__descriptor);
+  assert (message->base.descriptor == &ims__ifconnected__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__ifconnected__pack_to_buffer
                      (const Ims__IFConnected *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__ifconnected__descriptor);
+  assert (message->base.descriptor == &ims__ifconnected__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__IFConnected *
@@ -866,7 +866,7 @@ void   ims__ifconnected__free_unpacked
                      (Ims__IFConnected *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__ifconnected__descriptor);
+  assert (message->base.descriptor == &ims__ifconnected__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__last_fail_cause__init
@@ -878,21 +878,21 @@ void   ims__last_fail_cause__init
 size_t ims__last_fail_cause__get_packed_size
                      (const Ims__LastFailCause *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__last_fail_cause__descriptor);
+  assert (message->base.descriptor == &ims__last_fail_cause__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__last_fail_cause__pack
                      (const Ims__LastFailCause *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__last_fail_cause__descriptor);
+  assert (message->base.descriptor == &ims__last_fail_cause__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__last_fail_cause__pack_to_buffer
                      (const Ims__LastFailCause *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__last_fail_cause__descriptor);
+  assert (message->base.descriptor == &ims__last_fail_cause__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__LastFailCause *
@@ -909,7 +909,7 @@ void   ims__last_fail_cause__free_unpacked
                      (Ims__LastFailCause *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__last_fail_cause__descriptor);
+  assert (message->base.descriptor == &ims__last_fail_cause__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__extra__init
@@ -921,21 +921,21 @@ void   ims__extra__init
 size_t ims__extra__get_packed_size
                      (const Ims__Extra *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__extra__descriptor);
+  assert (message->base.descriptor == &ims__extra__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__extra__pack
                      (const Ims__Extra *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__extra__descriptor);
+  assert (message->base.descriptor == &ims__extra__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__extra__pack_to_buffer
                      (const Ims__Extra *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__extra__descriptor);
+  assert (message->base.descriptor == &ims__extra__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__Extra *
@@ -952,7 +952,7 @@ void   ims__extra__free_unpacked
                      (Ims__Extra *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__extra__descriptor);
+  assert (message->base.descriptor == &ims__extra__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__handover__init
@@ -964,21 +964,21 @@ void   ims__handover__init
 size_t ims__handover__get_packed_size
                      (const Ims__Handover *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__handover__descriptor);
+  assert (message->base.descriptor == &ims__handover__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__handover__pack
                      (const Ims__Handover *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__handover__descriptor);
+  assert (message->base.descriptor == &ims__handover__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__handover__pack_to_buffer
                      (const Ims__Handover *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__handover__descriptor);
+  assert (message->base.descriptor == &ims__handover__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__Handover *
@@ -995,7 +995,7 @@ void   ims__handover__free_unpacked
                      (Ims__Handover *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__handover__descriptor);
+  assert (message->base.descriptor == &ims__handover__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__tty_notify__init
@@ -1007,21 +1007,21 @@ void   ims__tty_notify__init
 size_t ims__tty_notify__get_packed_size
                      (const Ims__TtyNotify *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__tty_notify__descriptor);
+  assert (message->base.descriptor == &ims__tty_notify__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__tty_notify__pack
                      (const Ims__TtyNotify *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__tty_notify__descriptor);
+  assert (message->base.descriptor == &ims__tty_notify__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__tty_notify__pack_to_buffer
                      (const Ims__TtyNotify *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__tty_notify__descriptor);
+  assert (message->base.descriptor == &ims__tty_notify__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__TtyNotify *
@@ -1038,7 +1038,7 @@ void   ims__tty_notify__free_unpacked
                      (Ims__TtyNotify *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__tty_notify__descriptor);
+  assert (message->base.descriptor == &ims__tty_notify__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__radio_state_changed__init
@@ -1050,21 +1050,21 @@ void   ims__radio_state_changed__init
 size_t ims__radio_state_changed__get_packed_size
                      (const Ims__RadioStateChanged *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__radio_state_changed__descriptor);
+  assert (message->base.descriptor == &ims__radio_state_changed__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__radio_state_changed__pack
                      (const Ims__RadioStateChanged *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__radio_state_changed__descriptor);
+  assert (message->base.descriptor == &ims__radio_state_changed__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__radio_state_changed__pack_to_buffer
                      (const Ims__RadioStateChanged *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__radio_state_changed__descriptor);
+  assert (message->base.descriptor == &ims__radio_state_changed__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__RadioStateChanged *
@@ -1081,7 +1081,7 @@ void   ims__radio_state_changed__free_unpacked
                      (Ims__RadioStateChanged *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__radio_state_changed__descriptor);
+  assert (message->base.descriptor == &ims__radio_state_changed__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__clip_provision_status__init
@@ -1093,21 +1093,21 @@ void   ims__clip_provision_status__init
 size_t ims__clip_provision_status__get_packed_size
                      (const Ims__ClipProvisionStatus *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__clip_provision_status__descriptor);
+  assert (message->base.descriptor == &ims__clip_provision_status__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__clip_provision_status__pack
                      (const Ims__ClipProvisionStatus *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__clip_provision_status__descriptor);
+  assert (message->base.descriptor == &ims__clip_provision_status__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__clip_provision_status__pack_to_buffer
                      (const Ims__ClipProvisionStatus *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__clip_provision_status__descriptor);
+  assert (message->base.descriptor == &ims__clip_provision_status__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__ClipProvisionStatus *
@@ -1124,7 +1124,7 @@ void   ims__clip_provision_status__free_unpacked
                      (Ims__ClipProvisionStatus *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__clip_provision_status__descriptor);
+  assert (message->base.descriptor == &ims__clip_provision_status__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__service_class__init
@@ -1136,21 +1136,21 @@ void   ims__service_class__init
 size_t ims__service_class__get_packed_size
                      (const Ims__ServiceClass *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__service_class__descriptor);
+  assert (message->base.descriptor == &ims__service_class__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__service_class__pack
                      (const Ims__ServiceClass *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__service_class__descriptor);
+  assert (message->base.descriptor == &ims__service_class__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__service_class__pack_to_buffer
                      (const Ims__ServiceClass *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__service_class__descriptor);
+  assert (message->base.descriptor == &ims__service_class__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__ServiceClass *
@@ -1167,7 +1167,7 @@ void   ims__service_class__free_unpacked
                      (Ims__ServiceClass *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__service_class__descriptor);
+  assert (message->base.descriptor == &ims__service_class__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__cb_num_list__init
@@ -1179,21 +1179,21 @@ void   ims__cb_num_list__init
 size_t ims__cb_num_list__get_packed_size
                      (const Ims__CbNumList *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__cb_num_list__descriptor);
+  assert (message->base.descriptor == &ims__cb_num_list__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__cb_num_list__pack
                      (const Ims__CbNumList *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__cb_num_list__descriptor);
+  assert (message->base.descriptor == &ims__cb_num_list__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__cb_num_list__pack_to_buffer
                      (const Ims__CbNumList *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__cb_num_list__descriptor);
+  assert (message->base.descriptor == &ims__cb_num_list__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__CbNumList *
@@ -1210,7 +1210,7 @@ void   ims__cb_num_list__free_unpacked
                      (Ims__CbNumList *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__cb_num_list__descriptor);
+  assert (message->base.descriptor == &ims__cb_num_list__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__cb_num_list_type__init
@@ -1222,21 +1222,21 @@ void   ims__cb_num_list_type__init
 size_t ims__cb_num_list_type__get_packed_size
                      (const Ims__CbNumListType *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__cb_num_list_type__descriptor);
+  assert (message->base.descriptor == &ims__cb_num_list_type__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__cb_num_list_type__pack
                      (const Ims__CbNumListType *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__cb_num_list_type__descriptor);
+  assert (message->base.descriptor == &ims__cb_num_list_type__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__cb_num_list_type__pack_to_buffer
                      (const Ims__CbNumListType *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__cb_num_list_type__descriptor);
+  assert (message->base.descriptor == &ims__cb_num_list_type__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__CbNumListType *
@@ -1253,7 +1253,7 @@ void   ims__cb_num_list_type__free_unpacked
                      (Ims__CbNumListType *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__cb_num_list_type__descriptor);
+  assert (message->base.descriptor == &ims__cb_num_list_type__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__call_waiting_info__init
@@ -1265,21 +1265,21 @@ void   ims__call_waiting_info__init
 size_t ims__call_waiting_info__get_packed_size
                      (const Ims__CallWaitingInfo *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_waiting_info__descriptor);
+  assert (message->base.descriptor == &ims__call_waiting_info__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__call_waiting_info__pack
                      (const Ims__CallWaitingInfo *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_waiting_info__descriptor);
+  assert (message->base.descriptor == &ims__call_waiting_info__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__call_waiting_info__pack_to_buffer
                      (const Ims__CallWaitingInfo *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_waiting_info__descriptor);
+  assert (message->base.descriptor == &ims__call_waiting_info__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__CallWaitingInfo *
@@ -1296,7 +1296,7 @@ void   ims__call_waiting_info__free_unpacked
                      (Ims__CallWaitingInfo *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_waiting_info__descriptor);
+  assert (message->base.descriptor == &ims__call_waiting_info__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__call_forward_info_list__call_forward_info__init
@@ -1314,21 +1314,21 @@ void   ims__call_forward_info_list__init
 size_t ims__call_forward_info_list__get_packed_size
                      (const Ims__CallForwardInfoList *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_forward_info_list__descriptor);
+  assert (message->base.descriptor == &ims__call_forward_info_list__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__call_forward_info_list__pack
                      (const Ims__CallForwardInfoList *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_forward_info_list__descriptor);
+  assert (message->base.descriptor == &ims__call_forward_info_list__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__call_forward_info_list__pack_to_buffer
                      (const Ims__CallForwardInfoList *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_forward_info_list__descriptor);
+  assert (message->base.descriptor == &ims__call_forward_info_list__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__CallForwardInfoList *
@@ -1345,7 +1345,7 @@ void   ims__call_forward_info_list__free_unpacked
                      (Ims__CallForwardInfoList *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__call_forward_info_list__descriptor);
+  assert (message->base.descriptor == &ims__call_forward_info_list__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__conf_info__init
@@ -1357,21 +1357,21 @@ void   ims__conf_info__init
 size_t ims__conf_info__get_packed_size
                      (const Ims__ConfInfo *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__conf_info__descriptor);
+  assert (message->base.descriptor == &ims__conf_info__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__conf_info__pack
                      (const Ims__ConfInfo *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__conf_info__descriptor);
+  assert (message->base.descriptor == &ims__conf_info__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__conf_info__pack_to_buffer
                      (const Ims__ConfInfo *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__conf_info__descriptor);
+  assert (message->base.descriptor == &ims__conf_info__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__ConfInfo *
@@ -1388,7 +1388,7 @@ void   ims__conf_info__free_unpacked
                      (Ims__ConfInfo *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__conf_info__descriptor);
+  assert (message->base.descriptor == &ims__conf_info__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__supp_svc_notification__init
@@ -1400,21 +1400,21 @@ void   ims__supp_svc_notification__init
 size_t ims__supp_svc_notification__get_packed_size
                      (const Ims__SuppSvcNotification *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__supp_svc_notification__descriptor);
+  assert (message->base.descriptor == &ims__supp_svc_notification__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__supp_svc_notification__pack
                      (const Ims__SuppSvcNotification *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__supp_svc_notification__descriptor);
+  assert (message->base.descriptor == &ims__supp_svc_notification__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__supp_svc_notification__pack_to_buffer
                      (const Ims__SuppSvcNotification *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__supp_svc_notification__descriptor);
+  assert (message->base.descriptor == &ims__supp_svc_notification__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__SuppSvcNotification *
@@ -1431,7 +1431,7 @@ void   ims__supp_svc_notification__free_unpacked
                      (Ims__SuppSvcNotification *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__supp_svc_notification__descriptor);
+  assert (message->base.descriptor == &ims__supp_svc_notification__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__supp_svc_status__init
@@ -1443,21 +1443,21 @@ void   ims__supp_svc_status__init
 size_t ims__supp_svc_status__get_packed_size
                      (const Ims__SuppSvcStatus *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__supp_svc_status__descriptor);
+  assert (message->base.descriptor == &ims__supp_svc_status__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__supp_svc_status__pack
                      (const Ims__SuppSvcStatus *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__supp_svc_status__descriptor);
+  assert (message->base.descriptor == &ims__supp_svc_status__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__supp_svc_status__pack_to_buffer
                      (const Ims__SuppSvcStatus *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__supp_svc_status__descriptor);
+  assert (message->base.descriptor == &ims__supp_svc_status__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__SuppSvcStatus *
@@ -1474,7 +1474,7 @@ void   ims__supp_svc_status__free_unpacked
                      (Ims__SuppSvcStatus *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__supp_svc_status__descriptor);
+  assert (message->base.descriptor == &ims__supp_svc_status__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__supp_svc_request__init
@@ -1486,21 +1486,21 @@ void   ims__supp_svc_request__init
 size_t ims__supp_svc_request__get_packed_size
                      (const Ims__SuppSvcRequest *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__supp_svc_request__descriptor);
+  assert (message->base.descriptor == &ims__supp_svc_request__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__supp_svc_request__pack
                      (const Ims__SuppSvcRequest *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__supp_svc_request__descriptor);
+  assert (message->base.descriptor == &ims__supp_svc_request__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__supp_svc_request__pack_to_buffer
                      (const Ims__SuppSvcRequest *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__supp_svc_request__descriptor);
+  assert (message->base.descriptor == &ims__supp_svc_request__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__SuppSvcRequest *
@@ -1517,7 +1517,7 @@ void   ims__supp_svc_request__free_unpacked
                      (Ims__SuppSvcRequest *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__supp_svc_request__descriptor);
+  assert (message->base.descriptor == &ims__supp_svc_request__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__supp_svc_response__init
@@ -1529,21 +1529,21 @@ void   ims__supp_svc_response__init
 size_t ims__supp_svc_response__get_packed_size
                      (const Ims__SuppSvcResponse *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__supp_svc_response__descriptor);
+  assert (message->base.descriptor == &ims__supp_svc_response__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__supp_svc_response__pack
                      (const Ims__SuppSvcResponse *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__supp_svc_response__descriptor);
+  assert (message->base.descriptor == &ims__supp_svc_response__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__supp_svc_response__pack_to_buffer
                      (const Ims__SuppSvcResponse *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__supp_svc_response__descriptor);
+  assert (message->base.descriptor == &ims__supp_svc_response__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__SuppSvcResponse *
@@ -1560,7 +1560,7 @@ void   ims__supp_svc_response__free_unpacked
                      (Ims__SuppSvcResponse *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__supp_svc_response__descriptor);
+  assert (message->base.descriptor == &ims__supp_svc_response__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 void   ims__video_call_quality__init
@@ -1572,21 +1572,21 @@ void   ims__video_call_quality__init
 size_t ims__video_call_quality__get_packed_size
                      (const Ims__VideoCallQuality *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__video_call_quality__descriptor);
+  assert (message->base.descriptor == &ims__video_call_quality__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
 size_t ims__video_call_quality__pack
                      (const Ims__VideoCallQuality *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__video_call_quality__descriptor);
+  assert (message->base.descriptor == &ims__video_call_quality__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
 size_t ims__video_call_quality__pack_to_buffer
                      (const Ims__VideoCallQuality *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__video_call_quality__descriptor);
+  assert (message->base.descriptor == &ims__video_call_quality__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
 Ims__VideoCallQuality *
@@ -1603,7 +1603,7 @@ void   ims__video_call_quality__free_unpacked
                      (Ims__VideoCallQuality *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &ims__video_call_quality__descriptor);
+  assert (message->base.descriptor == &ims__video_call_quality__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
 static const ProtobufCFieldDescriptor ims__msg_tag__field_descriptors[4] =
@@ -1614,7 +1614,7 @@ static const ProtobufCFieldDescriptor ims__msg_tag__field_descriptors[4] =
     PROTOBUF_C_LABEL_REQUIRED,
     PROTOBUF_C_TYPE_FIXED32,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__MsgTag, token),
+    offsetof(Ims__MsgTag, token),
     NULL,
     NULL,
     0,            /* packed */
@@ -1626,7 +1626,7 @@ static const ProtobufCFieldDescriptor ims__msg_tag__field_descriptors[4] =
     PROTOBUF_C_LABEL_REQUIRED,
     PROTOBUF_C_TYPE_ENUM,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__MsgTag, type),
+    offsetof(Ims__MsgTag, type),
     &ims__msg_type__descriptor,
     NULL,
     0,            /* packed */
@@ -1638,7 +1638,7 @@ static const ProtobufCFieldDescriptor ims__msg_tag__field_descriptors[4] =
     PROTOBUF_C_LABEL_REQUIRED,
     PROTOBUF_C_TYPE_ENUM,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__MsgTag, id),
+    offsetof(Ims__MsgTag, id),
     &ims__msg_id__descriptor,
     NULL,
     0,            /* packed */
@@ -1650,7 +1650,7 @@ static const ProtobufCFieldDescriptor ims__msg_tag__field_descriptors[4] =
     PROTOBUF_C_LABEL_REQUIRED,
     PROTOBUF_C_TYPE_ENUM,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__MsgTag, error),
+    offsetof(Ims__MsgTag, error),
     &ims__error__descriptor,
     NULL,
     0,            /* packed */
@@ -1670,7 +1670,7 @@ static const ProtobufCIntRange ims__msg_tag__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__msg_tag__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.MsgTag",
   "MsgTag",
   "Ims__MsgTag",
@@ -1690,8 +1690,8 @@ static const ProtobufCFieldDescriptor ims__call_fail_cause_response__field_descr
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__CallFailCauseResponse, has_failcause),
-    PROTOBUF_C_OFFSETOF(Ims__CallFailCauseResponse, failcause),
+    offsetof(Ims__CallFailCauseResponse, has_failcause),
+    offsetof(Ims__CallFailCauseResponse, failcause),
     &ims__call_fail_cause__descriptor,
     NULL,
     0,            /* packed */
@@ -1702,8 +1702,8 @@ static const ProtobufCFieldDescriptor ims__call_fail_cause_response__field_descr
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_BYTES,
-    PROTOBUF_C_OFFSETOF(Ims__CallFailCauseResponse, has_errorinfo),
-    PROTOBUF_C_OFFSETOF(Ims__CallFailCauseResponse, errorinfo),
+    offsetof(Ims__CallFailCauseResponse, has_errorinfo),
+    offsetof(Ims__CallFailCauseResponse, errorinfo),
     NULL,
     NULL,
     0,            /* packed */
@@ -1721,7 +1721,7 @@ static const ProtobufCIntRange ims__call_fail_cause_response__number_ranges[1 + 
 };
 const ProtobufCMessageDescriptor ims__call_fail_cause_response__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.CallFailCauseResponse",
   "CallFailCauseResponse",
   "Ims__CallFailCauseResponse",
@@ -1741,8 +1741,8 @@ static const ProtobufCFieldDescriptor ims__status_for_access_tech__field_descrip
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__StatusForAccessTech, has_networkmode),
-    PROTOBUF_C_OFFSETOF(Ims__StatusForAccessTech, networkmode),
+    offsetof(Ims__StatusForAccessTech, has_networkmode),
+    offsetof(Ims__StatusForAccessTech, networkmode),
     &ims__radio_tech_type__descriptor,
     NULL,
     0,            /* packed */
@@ -1753,8 +1753,8 @@ static const ProtobufCFieldDescriptor ims__status_for_access_tech__field_descrip
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__StatusForAccessTech, has_status),
-    PROTOBUF_C_OFFSETOF(Ims__StatusForAccessTech, status),
+    offsetof(Ims__StatusForAccessTech, has_status),
+    offsetof(Ims__StatusForAccessTech, status),
     &ims__status_type__descriptor,
     NULL,
     0,            /* packed */
@@ -1765,8 +1765,8 @@ static const ProtobufCFieldDescriptor ims__status_for_access_tech__field_descrip
     3,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__StatusForAccessTech, has_restrictioncause),
-    PROTOBUF_C_OFFSETOF(Ims__StatusForAccessTech, restrictioncause),
+    offsetof(Ims__StatusForAccessTech, has_restrictioncause),
+    offsetof(Ims__StatusForAccessTech, restrictioncause),
     NULL,
     NULL,
     0,            /* packed */
@@ -1778,7 +1778,7 @@ static const ProtobufCFieldDescriptor ims__status_for_access_tech__field_descrip
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__StatusForAccessTech, registered),
+    offsetof(Ims__StatusForAccessTech, registered),
     &ims__registration__descriptor,
     NULL,
     0,            /* packed */
@@ -1798,7 +1798,7 @@ static const ProtobufCIntRange ims__status_for_access_tech__number_ranges[1 + 1]
 };
 const ProtobufCMessageDescriptor ims__status_for_access_tech__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.StatusForAccessTech",
   "StatusForAccessTech",
   "Ims__StatusForAccessTech",
@@ -1818,8 +1818,8 @@ static const ProtobufCFieldDescriptor ims__info__field_descriptors[7] =
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_BOOL,
-    PROTOBUF_C_OFFSETOF(Ims__Info, has_isvalid),
-    PROTOBUF_C_OFFSETOF(Ims__Info, isvalid),
+    offsetof(Ims__Info, has_isvalid),
+    offsetof(Ims__Info, isvalid),
     NULL,
     NULL,
     0,            /* packed */
@@ -1830,8 +1830,8 @@ static const ProtobufCFieldDescriptor ims__info__field_descriptors[7] =
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__Info, has_type),
-    PROTOBUF_C_OFFSETOF(Ims__Info, type),
+    offsetof(Ims__Info, has_type),
+    offsetof(Ims__Info, type),
     &ims__srv_type__descriptor,
     NULL,
     0,            /* packed */
@@ -1842,8 +1842,8 @@ static const ProtobufCFieldDescriptor ims__info__field_descriptors[7] =
     3,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__Info, has_calltype),
-    PROTOBUF_C_OFFSETOF(Ims__Info, calltype),
+    offsetof(Ims__Info, has_calltype),
+    offsetof(Ims__Info, calltype),
     &ims__call_type__descriptor,
     NULL,
     0,            /* packed */
@@ -1854,8 +1854,8 @@ static const ProtobufCFieldDescriptor ims__info__field_descriptors[7] =
     4,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__Info, has_status),
-    PROTOBUF_C_OFFSETOF(Ims__Info, status),
+    offsetof(Ims__Info, has_status),
+    offsetof(Ims__Info, status),
     &ims__status_type__descriptor,
     NULL,
     0,            /* packed */
@@ -1866,8 +1866,8 @@ static const ProtobufCFieldDescriptor ims__info__field_descriptors[7] =
     5,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_BYTES,
-    PROTOBUF_C_OFFSETOF(Ims__Info, has_userdata),
-    PROTOBUF_C_OFFSETOF(Ims__Info, userdata),
+    offsetof(Ims__Info, has_userdata),
+    offsetof(Ims__Info, userdata),
     NULL,
     NULL,
     0,            /* packed */
@@ -1878,8 +1878,8 @@ static const ProtobufCFieldDescriptor ims__info__field_descriptors[7] =
     6,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__Info, has_restrictcause),
-    PROTOBUF_C_OFFSETOF(Ims__Info, restrictcause),
+    offsetof(Ims__Info, has_restrictcause),
+    offsetof(Ims__Info, restrictcause),
     NULL,
     NULL,
     0,            /* packed */
@@ -1890,8 +1890,8 @@ static const ProtobufCFieldDescriptor ims__info__field_descriptors[7] =
     7,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_MESSAGE,
-    PROTOBUF_C_OFFSETOF(Ims__Info, n_acctechstatus),
-    PROTOBUF_C_OFFSETOF(Ims__Info, acctechstatus),
+    offsetof(Ims__Info, n_acctechstatus),
+    offsetof(Ims__Info, acctechstatus),
     &ims__status_for_access_tech__descriptor,
     NULL,
     0,            /* packed */
@@ -1914,7 +1914,7 @@ static const ProtobufCIntRange ims__info__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__info__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.Info",
   "Info",
   "Ims__Info",
@@ -1934,8 +1934,8 @@ static const ProtobufCFieldDescriptor ims__srv_status_list__field_descriptors[1]
     2,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_MESSAGE,
-    PROTOBUF_C_OFFSETOF(Ims__SrvStatusList, n_srvstatusinfo),
-    PROTOBUF_C_OFFSETOF(Ims__SrvStatusList, srvstatusinfo),
+    offsetof(Ims__SrvStatusList, n_srvstatusinfo),
+    offsetof(Ims__SrvStatusList, srvstatusinfo),
     &ims__info__descriptor,
     NULL,
     0,            /* packed */
@@ -1952,7 +1952,7 @@ static const ProtobufCIntRange ims__srv_status_list__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__srv_status_list__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.SrvStatusList",
   "SrvStatusList",
   "Ims__SrvStatusList",
@@ -1973,8 +1973,8 @@ static const ProtobufCFieldDescriptor ims__call_details__field_descriptors[6] =
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__CallDetails, has_calltype),
-    PROTOBUF_C_OFFSETOF(Ims__CallDetails, calltype),
+    offsetof(Ims__CallDetails, has_calltype),
+    offsetof(Ims__CallDetails, calltype),
     &ims__call_type__descriptor,
     NULL,
     0,            /* packed */
@@ -1985,8 +1985,8 @@ static const ProtobufCFieldDescriptor ims__call_details__field_descriptors[6] =
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__CallDetails, has_calldomain),
-    PROTOBUF_C_OFFSETOF(Ims__CallDetails, calldomain),
+    offsetof(Ims__CallDetails, has_calldomain),
+    offsetof(Ims__CallDetails, calldomain),
     &ims__call_domain__descriptor,
     NULL,
     0,            /* packed */
@@ -1997,8 +1997,8 @@ static const ProtobufCFieldDescriptor ims__call_details__field_descriptors[6] =
     3,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__CallDetails, has_extraslength),
-    PROTOBUF_C_OFFSETOF(Ims__CallDetails, extraslength),
+    offsetof(Ims__CallDetails, has_extraslength),
+    offsetof(Ims__CallDetails, extraslength),
     NULL,
     &ims__call_details__extras_length__default_value,
     0,            /* packed */
@@ -2009,8 +2009,8 @@ static const ProtobufCFieldDescriptor ims__call_details__field_descriptors[6] =
     4,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_STRING,
-    PROTOBUF_C_OFFSETOF(Ims__CallDetails, n_extras),
-    PROTOBUF_C_OFFSETOF(Ims__CallDetails, extras),
+    offsetof(Ims__CallDetails, n_extras),
+    offsetof(Ims__CallDetails, extras),
     NULL,
     NULL,
     0,            /* packed */
@@ -2022,7 +2022,7 @@ static const ProtobufCFieldDescriptor ims__call_details__field_descriptors[6] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__CallDetails, localability),
+    offsetof(Ims__CallDetails, localability),
     &ims__srv_status_list__descriptor,
     NULL,
     0,            /* packed */
@@ -2034,7 +2034,7 @@ static const ProtobufCFieldDescriptor ims__call_details__field_descriptors[6] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__CallDetails, peerability),
+    offsetof(Ims__CallDetails, peerability),
     &ims__srv_status_list__descriptor,
     NULL,
     0,            /* packed */
@@ -2056,7 +2056,7 @@ static const ProtobufCIntRange ims__call_details__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__call_details__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.CallDetails",
   "CallDetails",
   "Ims__CallDetails",
@@ -2076,8 +2076,8 @@ static const ProtobufCFieldDescriptor ims__call_modify__field_descriptors[3] =
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__CallModify, has_callindex),
-    PROTOBUF_C_OFFSETOF(Ims__CallModify, callindex),
+    offsetof(Ims__CallModify, has_callindex),
+    offsetof(Ims__CallModify, callindex),
     NULL,
     NULL,
     0,            /* packed */
@@ -2089,7 +2089,7 @@ static const ProtobufCFieldDescriptor ims__call_modify__field_descriptors[3] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__CallModify, calldetails),
+    offsetof(Ims__CallModify, calldetails),
     &ims__call_details__descriptor,
     NULL,
     0,            /* packed */
@@ -2100,8 +2100,8 @@ static const ProtobufCFieldDescriptor ims__call_modify__field_descriptors[3] =
     4,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__CallModify, has_error),
-    PROTOBUF_C_OFFSETOF(Ims__CallModify, error),
+    offsetof(Ims__CallModify, has_error),
+    offsetof(Ims__CallModify, error),
     &ims__error__descriptor,
     NULL,
     0,            /* packed */
@@ -2120,7 +2120,7 @@ static const ProtobufCIntRange ims__call_modify__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__call_modify__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.CallModify",
   "CallModify",
   "Ims__CallModify",
@@ -2140,8 +2140,8 @@ static const ProtobufCFieldDescriptor ims__call_list__call__field_descriptors[13
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, has_state),
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, state),
+    offsetof(Ims__CallList__Call, has_state),
+    offsetof(Ims__CallList__Call, state),
     &ims__call_state__descriptor,
     NULL,
     0,            /* packed */
@@ -2152,8 +2152,8 @@ static const ProtobufCFieldDescriptor ims__call_list__call__field_descriptors[13
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, has_index),
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, index),
+    offsetof(Ims__CallList__Call, has_index),
+    offsetof(Ims__CallList__Call, index),
     NULL,
     NULL,
     0,            /* packed */
@@ -2164,8 +2164,8 @@ static const ProtobufCFieldDescriptor ims__call_list__call__field_descriptors[13
     3,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, has_toa),
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, toa),
+    offsetof(Ims__CallList__Call, has_toa),
+    offsetof(Ims__CallList__Call, toa),
     NULL,
     NULL,
     0,            /* packed */
@@ -2176,8 +2176,8 @@ static const ProtobufCFieldDescriptor ims__call_list__call__field_descriptors[13
     4,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_BOOL,
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, has_ismpty),
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, ismpty),
+    offsetof(Ims__CallList__Call, has_ismpty),
+    offsetof(Ims__CallList__Call, ismpty),
     NULL,
     NULL,
     0,            /* packed */
@@ -2188,8 +2188,8 @@ static const ProtobufCFieldDescriptor ims__call_list__call__field_descriptors[13
     5,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_BOOL,
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, has_ismt),
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, ismt),
+    offsetof(Ims__CallList__Call, has_ismt),
+    offsetof(Ims__CallList__Call, ismt),
     NULL,
     NULL,
     0,            /* packed */
@@ -2200,8 +2200,8 @@ static const ProtobufCFieldDescriptor ims__call_list__call__field_descriptors[13
     6,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, has_als),
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, als),
+    offsetof(Ims__CallList__Call, has_als),
+    offsetof(Ims__CallList__Call, als),
     NULL,
     NULL,
     0,            /* packed */
@@ -2212,8 +2212,8 @@ static const ProtobufCFieldDescriptor ims__call_list__call__field_descriptors[13
     7,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_BOOL,
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, has_isvoice),
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, isvoice),
+    offsetof(Ims__CallList__Call, has_isvoice),
+    offsetof(Ims__CallList__Call, isvoice),
     NULL,
     NULL,
     0,            /* packed */
@@ -2224,8 +2224,8 @@ static const ProtobufCFieldDescriptor ims__call_list__call__field_descriptors[13
     8,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_BOOL,
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, has_isvoiceprivacy),
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, isvoiceprivacy),
+    offsetof(Ims__CallList__Call, has_isvoiceprivacy),
+    offsetof(Ims__CallList__Call, isvoiceprivacy),
     NULL,
     NULL,
     0,            /* packed */
@@ -2237,7 +2237,7 @@ static const ProtobufCFieldDescriptor ims__call_list__call__field_descriptors[13
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, number),
+    offsetof(Ims__CallList__Call, number),
     NULL,
     NULL,
     0,            /* packed */
@@ -2248,8 +2248,8 @@ static const ProtobufCFieldDescriptor ims__call_list__call__field_descriptors[13
     10,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, has_numberpresentation),
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, numberpresentation),
+    offsetof(Ims__CallList__Call, has_numberpresentation),
+    offsetof(Ims__CallList__Call, numberpresentation),
     NULL,
     NULL,
     0,            /* packed */
@@ -2261,7 +2261,7 @@ static const ProtobufCFieldDescriptor ims__call_list__call__field_descriptors[13
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, name),
+    offsetof(Ims__CallList__Call, name),
     NULL,
     NULL,
     0,            /* packed */
@@ -2272,8 +2272,8 @@ static const ProtobufCFieldDescriptor ims__call_list__call__field_descriptors[13
     12,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, has_namepresentation),
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, namepresentation),
+    offsetof(Ims__CallList__Call, has_namepresentation),
+    offsetof(Ims__CallList__Call, namepresentation),
     NULL,
     NULL,
     0,            /* packed */
@@ -2285,7 +2285,7 @@ static const ProtobufCFieldDescriptor ims__call_list__call__field_descriptors[13
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__CallList__Call, calldetails),
+    offsetof(Ims__CallList__Call, calldetails),
     &ims__call_details__descriptor,
     NULL,
     0,            /* packed */
@@ -2314,7 +2314,7 @@ static const ProtobufCIntRange ims__call_list__call__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__call_list__call__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.CallList.Call",
   "Call",
   "Ims__CallList__Call",
@@ -2334,8 +2334,8 @@ static const ProtobufCFieldDescriptor ims__call_list__field_descriptors[1] =
     2,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_MESSAGE,
-    PROTOBUF_C_OFFSETOF(Ims__CallList, n_callattributes),
-    PROTOBUF_C_OFFSETOF(Ims__CallList, callattributes),
+    offsetof(Ims__CallList, n_callattributes),
+    offsetof(Ims__CallList, callattributes),
     &ims__call_list__call__descriptor,
     NULL,
     0,            /* packed */
@@ -2352,7 +2352,7 @@ static const ProtobufCIntRange ims__call_list__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__call_list__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.CallList",
   "CallList",
   "Ims__CallList",
@@ -2373,7 +2373,7 @@ static const ProtobufCFieldDescriptor ims__dial__field_descriptors[5] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__Dial, address),
+    offsetof(Ims__Dial, address),
     NULL,
     NULL,
     0,            /* packed */
@@ -2384,8 +2384,8 @@ static const ProtobufCFieldDescriptor ims__dial__field_descriptors[5] =
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__Dial, has_clir),
-    PROTOBUF_C_OFFSETOF(Ims__Dial, clir),
+    offsetof(Ims__Dial, has_clir),
+    offsetof(Ims__Dial, clir),
     NULL,
     NULL,
     0,            /* packed */
@@ -2397,7 +2397,7 @@ static const ProtobufCFieldDescriptor ims__dial__field_descriptors[5] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__Dial, calldetails),
+    offsetof(Ims__Dial, calldetails),
     &ims__call_details__descriptor,
     NULL,
     0,            /* packed */
@@ -2408,8 +2408,8 @@ static const ProtobufCFieldDescriptor ims__dial__field_descriptors[5] =
     4,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__Dial, has_presentation),
-    PROTOBUF_C_OFFSETOF(Ims__Dial, presentation),
+    offsetof(Ims__Dial, has_presentation),
+    offsetof(Ims__Dial, presentation),
     &ims__ip_presentation__descriptor,
     NULL,
     0,            /* packed */
@@ -2420,8 +2420,8 @@ static const ProtobufCFieldDescriptor ims__dial__field_descriptors[5] =
     5,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_BOOL,
-    PROTOBUF_C_OFFSETOF(Ims__Dial, has_isconferenceuri),
-    PROTOBUF_C_OFFSETOF(Ims__Dial, isconferenceuri),
+    offsetof(Ims__Dial, has_isconferenceuri),
+    offsetof(Ims__Dial, isconferenceuri),
     NULL,
     NULL,
     0,            /* packed */
@@ -2442,7 +2442,7 @@ static const ProtobufCIntRange ims__dial__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__dial__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.Dial",
   "Dial",
   "Ims__Dial",
@@ -2462,8 +2462,8 @@ static const ProtobufCFieldDescriptor ims__hangup__field_descriptors[5] =
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__Hangup, has_conn_index),
-    PROTOBUF_C_OFFSETOF(Ims__Hangup, conn_index),
+    offsetof(Ims__Hangup, has_conn_index),
+    offsetof(Ims__Hangup, conn_index),
     NULL,
     NULL,
     0,            /* packed */
@@ -2474,8 +2474,8 @@ static const ProtobufCFieldDescriptor ims__hangup__field_descriptors[5] =
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_BOOL,
-    PROTOBUF_C_OFFSETOF(Ims__Hangup, has_multi_party),
-    PROTOBUF_C_OFFSETOF(Ims__Hangup, multi_party),
+    offsetof(Ims__Hangup, has_multi_party),
+    offsetof(Ims__Hangup, multi_party),
     NULL,
     NULL,
     0,            /* packed */
@@ -2487,7 +2487,7 @@ static const ProtobufCFieldDescriptor ims__hangup__field_descriptors[5] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__Hangup, conn_uri),
+    offsetof(Ims__Hangup, conn_uri),
     NULL,
     NULL,
     0,            /* packed */
@@ -2498,8 +2498,8 @@ static const ProtobufCFieldDescriptor ims__hangup__field_descriptors[5] =
     4,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__Hangup, has_conf_id),
-    PROTOBUF_C_OFFSETOF(Ims__Hangup, conf_id),
+    offsetof(Ims__Hangup, has_conf_id),
+    offsetof(Ims__Hangup, conf_id),
     NULL,
     NULL,
     0,            /* packed */
@@ -2511,7 +2511,7 @@ static const ProtobufCFieldDescriptor ims__hangup__field_descriptors[5] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__Hangup, failcauseresponse),
+    offsetof(Ims__Hangup, failcauseresponse),
     &ims__call_fail_cause_response__descriptor,
     NULL,
     0,            /* packed */
@@ -2532,7 +2532,7 @@ static const ProtobufCIntRange ims__hangup__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__hangup__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.Hangup",
   "Hangup",
   "Ims__Hangup",
@@ -2552,8 +2552,8 @@ static const ProtobufCFieldDescriptor ims__deflect_call__field_descriptors[2] =
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__DeflectCall, has_conn_index),
-    PROTOBUF_C_OFFSETOF(Ims__DeflectCall, conn_index),
+    offsetof(Ims__DeflectCall, has_conn_index),
+    offsetof(Ims__DeflectCall, conn_index),
     NULL,
     NULL,
     0,            /* packed */
@@ -2565,7 +2565,7 @@ static const ProtobufCFieldDescriptor ims__deflect_call__field_descriptors[2] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__DeflectCall, number),
+    offsetof(Ims__DeflectCall, number),
     NULL,
     NULL,
     0,            /* packed */
@@ -2583,7 +2583,7 @@ static const ProtobufCIntRange ims__deflect_call__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__deflect_call__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.DeflectCall",
   "DeflectCall",
   "Ims__DeflectCall",
@@ -2603,8 +2603,8 @@ static const ProtobufCFieldDescriptor ims__clir__field_descriptors[2] =
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__Clir, has_param_m),
-    PROTOBUF_C_OFFSETOF(Ims__Clir, param_m),
+    offsetof(Ims__Clir, has_param_m),
+    offsetof(Ims__Clir, param_m),
     NULL,
     NULL,
     0,            /* packed */
@@ -2615,8 +2615,8 @@ static const ProtobufCFieldDescriptor ims__clir__field_descriptors[2] =
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__Clir, has_param_n),
-    PROTOBUF_C_OFFSETOF(Ims__Clir, param_n),
+    offsetof(Ims__Clir, has_param_n),
+    offsetof(Ims__Clir, param_n),
     NULL,
     NULL,
     0,            /* packed */
@@ -2634,7 +2634,7 @@ static const ProtobufCIntRange ims__clir__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__clir__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.Clir",
   "Clir",
   "Ims__Clir",
@@ -2654,8 +2654,8 @@ static const ProtobufCFieldDescriptor ims__answer__field_descriptors[2] =
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__Answer, has_call_type),
-    PROTOBUF_C_OFFSETOF(Ims__Answer, call_type),
+    offsetof(Ims__Answer, has_call_type),
+    offsetof(Ims__Answer, call_type),
     &ims__call_type__descriptor,
     NULL,
     0,            /* packed */
@@ -2666,8 +2666,8 @@ static const ProtobufCFieldDescriptor ims__answer__field_descriptors[2] =
     4,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__Answer, has_presentation),
-    PROTOBUF_C_OFFSETOF(Ims__Answer, presentation),
+    offsetof(Ims__Answer, has_presentation),
+    offsetof(Ims__Answer, presentation),
     &ims__ip_presentation__descriptor,
     NULL,
     0,            /* packed */
@@ -2686,7 +2686,7 @@ static const ProtobufCIntRange ims__answer__number_ranges[2 + 1] =
 };
 const ProtobufCMessageDescriptor ims__answer__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.Answer",
   "Answer",
   "Ims__Answer",
@@ -2706,8 +2706,8 @@ static const ProtobufCFieldDescriptor ims__switch_waiting_or_holding_and_active_
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__SwitchWaitingOrHoldingAndActive, has_call_type),
-    PROTOBUF_C_OFFSETOF(Ims__SwitchWaitingOrHoldingAndActive, call_type),
+    offsetof(Ims__SwitchWaitingOrHoldingAndActive, has_call_type),
+    offsetof(Ims__SwitchWaitingOrHoldingAndActive, call_type),
     &ims__call_type__descriptor,
     NULL,
     0,            /* packed */
@@ -2724,7 +2724,7 @@ static const ProtobufCIntRange ims__switch_waiting_or_holding_and_active__number
 };
 const ProtobufCMessageDescriptor ims__switch_waiting_or_holding_and_active__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.SwitchWaitingOrHoldingAndActive",
   "SwitchWaitingOrHoldingAndActive",
   "Ims__SwitchWaitingOrHoldingAndActive",
@@ -2744,8 +2744,8 @@ static const ProtobufCFieldDescriptor ims__mute__field_descriptors[1] =
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_BOOL,
-    PROTOBUF_C_OFFSETOF(Ims__Mute, has_mute_flag),
-    PROTOBUF_C_OFFSETOF(Ims__Mute, mute_flag),
+    offsetof(Ims__Mute, has_mute_flag),
+    offsetof(Ims__Mute, mute_flag),
     NULL,
     NULL,
     0,            /* packed */
@@ -2762,7 +2762,7 @@ static const ProtobufCIntRange ims__mute__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__mute__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.Mute",
   "Mute",
   "Ims__Mute",
@@ -2783,7 +2783,7 @@ static const ProtobufCFieldDescriptor ims__dtmf__field_descriptors[1] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__Dtmf, dtmf),
+    offsetof(Ims__Dtmf, dtmf),
     NULL,
     NULL,
     0,            /* packed */
@@ -2800,7 +2800,7 @@ static const ProtobufCIntRange ims__dtmf__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__dtmf__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.Dtmf",
   "Dtmf",
   "Ims__Dtmf",
@@ -2828,7 +2828,7 @@ const ProtobufCEnumValueIndex ims__registration__reg_state__enum_values_by_name[
 };
 const ProtobufCEnumDescriptor ims__registration__reg_state__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.Registration.RegState",
   "RegState",
   "Ims__Registration__RegState",
@@ -2848,8 +2848,8 @@ static const ProtobufCFieldDescriptor ims__registration__field_descriptors[1] =
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__Registration, has_state),
-    PROTOBUF_C_OFFSETOF(Ims__Registration, state),
+    offsetof(Ims__Registration, has_state),
+    offsetof(Ims__Registration, state),
     &ims__registration__reg_state__descriptor,
     NULL,
     0,            /* packed */
@@ -2866,7 +2866,7 @@ static const ProtobufCIntRange ims__registration__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__registration__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.Registration",
   "Registration",
   "Ims__Registration",
@@ -2894,7 +2894,7 @@ const ProtobufCEnumValueIndex ims__ring_back_tone__tone_flag__enum_values_by_nam
 };
 const ProtobufCEnumDescriptor ims__ring_back_tone__tone_flag__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.RingBackTone.ToneFlag",
   "ToneFlag",
   "Ims__RingBackTone__ToneFlag",
@@ -2914,8 +2914,8 @@ static const ProtobufCFieldDescriptor ims__ring_back_tone__field_descriptors[1] 
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__RingBackTone, has_flag),
-    PROTOBUF_C_OFFSETOF(Ims__RingBackTone, flag),
+    offsetof(Ims__RingBackTone, has_flag),
+    offsetof(Ims__RingBackTone, flag),
     &ims__ring_back_tone__tone_flag__descriptor,
     NULL,
     0,            /* packed */
@@ -2932,7 +2932,7 @@ static const ProtobufCIntRange ims__ring_back_tone__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__ring_back_tone__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.RingBackTone",
   "RingBackTone",
   "Ims__RingBackTone",
@@ -2958,7 +2958,7 @@ const ProtobufCEnumValueIndex ims__ifconnected__version__enum_values_by_name[1] 
 };
 const ProtobufCEnumDescriptor ims__ifconnected__version__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.IFConnected.Version",
   "Version",
   "Ims__IFConnected__Version",
@@ -2978,8 +2978,8 @@ static const ProtobufCFieldDescriptor ims__ifconnected__field_descriptors[1] =
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__IFConnected, has_if_version),
-    PROTOBUF_C_OFFSETOF(Ims__IFConnected, if_version),
+    offsetof(Ims__IFConnected, has_if_version),
+    offsetof(Ims__IFConnected, if_version),
     &ims__ifconnected__version__descriptor,
     NULL,
     0,            /* packed */
@@ -2996,7 +2996,7 @@ static const ProtobufCIntRange ims__ifconnected__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__ifconnected__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.IFConnected",
   "IFConnected",
   "Ims__IFConnected",
@@ -3016,8 +3016,8 @@ static const ProtobufCFieldDescriptor ims__last_fail_cause__field_descriptors[1]
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__LastFailCause, has_cause),
-    PROTOBUF_C_OFFSETOF(Ims__LastFailCause, cause),
+    offsetof(Ims__LastFailCause, has_cause),
+    offsetof(Ims__LastFailCause, cause),
     &ims__call_fail_cause__descriptor,
     NULL,
     0,            /* packed */
@@ -3034,7 +3034,7 @@ static const ProtobufCIntRange ims__last_fail_cause__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__last_fail_cause__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.LastFailCause",
   "LastFailCause",
   "Ims__LastFailCause",
@@ -3054,8 +3054,8 @@ static const ProtobufCFieldDescriptor ims__extra__field_descriptors[2] =
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__Extra, has_type),
-    PROTOBUF_C_OFFSETOF(Ims__Extra, type),
+    offsetof(Ims__Extra, has_type),
+    offsetof(Ims__Extra, type),
     &ims__extra__type__descriptor,
     NULL,
     0,            /* packed */
@@ -3066,8 +3066,8 @@ static const ProtobufCFieldDescriptor ims__extra__field_descriptors[2] =
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_BYTES,
-    PROTOBUF_C_OFFSETOF(Ims__Extra, has_extrainfo),
-    PROTOBUF_C_OFFSETOF(Ims__Extra, extrainfo),
+    offsetof(Ims__Extra, has_extrainfo),
+    offsetof(Ims__Extra, extrainfo),
     NULL,
     NULL,
     0,            /* packed */
@@ -3085,7 +3085,7 @@ static const ProtobufCIntRange ims__extra__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__extra__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.Extra",
   "Extra",
   "Ims__Extra",
@@ -3105,8 +3105,8 @@ static const ProtobufCFieldDescriptor ims__handover__field_descriptors[4] =
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__Handover, has_type),
-    PROTOBUF_C_OFFSETOF(Ims__Handover, type),
+    offsetof(Ims__Handover, has_type),
+    offsetof(Ims__Handover, type),
     &ims__handover__msg__type__descriptor,
     NULL,
     0,            /* packed */
@@ -3117,8 +3117,8 @@ static const ProtobufCFieldDescriptor ims__handover__field_descriptors[4] =
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__Handover, has_srctech),
-    PROTOBUF_C_OFFSETOF(Ims__Handover, srctech),
+    offsetof(Ims__Handover, has_srctech),
+    offsetof(Ims__Handover, srctech),
     &ims__radio_tech_type__descriptor,
     NULL,
     0,            /* packed */
@@ -3129,8 +3129,8 @@ static const ProtobufCFieldDescriptor ims__handover__field_descriptors[4] =
     3,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__Handover, has_targettech),
-    PROTOBUF_C_OFFSETOF(Ims__Handover, targettech),
+    offsetof(Ims__Handover, has_targettech),
+    offsetof(Ims__Handover, targettech),
     &ims__radio_tech_type__descriptor,
     NULL,
     0,            /* packed */
@@ -3142,7 +3142,7 @@ static const ProtobufCFieldDescriptor ims__handover__field_descriptors[4] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__Handover, hoextra),
+    offsetof(Ims__Handover, hoextra),
     &ims__extra__descriptor,
     NULL,
     0,            /* packed */
@@ -3162,7 +3162,7 @@ static const ProtobufCIntRange ims__handover__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__handover__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.Handover",
   "Handover",
   "Ims__Handover",
@@ -3182,8 +3182,8 @@ static const ProtobufCFieldDescriptor ims__tty_notify__field_descriptors[2] =
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__TtyNotify, has_mode),
-    PROTOBUF_C_OFFSETOF(Ims__TtyNotify, mode),
+    offsetof(Ims__TtyNotify, has_mode),
+    offsetof(Ims__TtyNotify, mode),
     &ims__tty__mode__type__descriptor,
     NULL,
     0,            /* packed */
@@ -3194,8 +3194,8 @@ static const ProtobufCFieldDescriptor ims__tty_notify__field_descriptors[2] =
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_BYTES,
-    PROTOBUF_C_OFFSETOF(Ims__TtyNotify, has_userdata),
-    PROTOBUF_C_OFFSETOF(Ims__TtyNotify, userdata),
+    offsetof(Ims__TtyNotify, has_userdata),
+    offsetof(Ims__TtyNotify, userdata),
     NULL,
     NULL,
     0,            /* packed */
@@ -3213,7 +3213,7 @@ static const ProtobufCIntRange ims__tty_notify__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__tty_notify__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.TtyNotify",
   "TtyNotify",
   "Ims__TtyNotify",
@@ -3233,8 +3233,8 @@ static const ProtobufCFieldDescriptor ims__radio_state_changed__field_descriptor
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__RadioStateChanged, has_state),
-    PROTOBUF_C_OFFSETOF(Ims__RadioStateChanged, state),
+    offsetof(Ims__RadioStateChanged, has_state),
+    offsetof(Ims__RadioStateChanged, state),
     &ims__radio_state__descriptor,
     NULL,
     0,            /* packed */
@@ -3251,7 +3251,7 @@ static const ProtobufCIntRange ims__radio_state_changed__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__radio_state_changed__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.RadioStateChanged",
   "RadioStateChanged",
   "Ims__RadioStateChanged",
@@ -3271,8 +3271,8 @@ static const ProtobufCFieldDescriptor ims__clip_provision_status__field_descript
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__ClipProvisionStatus, has_clip_status),
-    PROTOBUF_C_OFFSETOF(Ims__ClipProvisionStatus, clip_status),
+    offsetof(Ims__ClipProvisionStatus, has_clip_status),
+    offsetof(Ims__ClipProvisionStatus, clip_status),
     &ims__clip_status__descriptor,
     NULL,
     0,            /* packed */
@@ -3289,7 +3289,7 @@ static const ProtobufCIntRange ims__clip_provision_status__number_ranges[1 + 1] 
 };
 const ProtobufCMessageDescriptor ims__clip_provision_status__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.ClipProvisionStatus",
   "ClipProvisionStatus",
   "Ims__ClipProvisionStatus",
@@ -3309,8 +3309,8 @@ static const ProtobufCFieldDescriptor ims__service_class__field_descriptors[1] =
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__ServiceClass, has_service_class),
-    PROTOBUF_C_OFFSETOF(Ims__ServiceClass, service_class),
+    offsetof(Ims__ServiceClass, has_service_class),
+    offsetof(Ims__ServiceClass, service_class),
     NULL,
     NULL,
     0,            /* packed */
@@ -3327,7 +3327,7 @@ static const ProtobufCIntRange ims__service_class__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__service_class__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.ServiceClass",
   "ServiceClass",
   "Ims__ServiceClass",
@@ -3347,8 +3347,8 @@ static const ProtobufCFieldDescriptor ims__cb_num_list__field_descriptors[2] =
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__CbNumList, has_status),
-    PROTOBUF_C_OFFSETOF(Ims__CbNumList, status),
+    offsetof(Ims__CbNumList, has_status),
+    offsetof(Ims__CbNumList, status),
     &ims__service_class_status__descriptor,
     NULL,
     0,            /* packed */
@@ -3360,7 +3360,7 @@ static const ProtobufCFieldDescriptor ims__cb_num_list__field_descriptors[2] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__CbNumList, number),
+    offsetof(Ims__CbNumList, number),
     NULL,
     NULL,
     0,            /* packed */
@@ -3378,7 +3378,7 @@ static const ProtobufCIntRange ims__cb_num_list__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__cb_num_list__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.CbNumList",
   "CbNumList",
   "Ims__CbNumList",
@@ -3399,7 +3399,7 @@ static const ProtobufCFieldDescriptor ims__cb_num_list_type__field_descriptors[2
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__CbNumListType, serviceclass),
+    offsetof(Ims__CbNumListType, serviceclass),
     &ims__service_class__descriptor,
     NULL,
     0,            /* packed */
@@ -3410,8 +3410,8 @@ static const ProtobufCFieldDescriptor ims__cb_num_list_type__field_descriptors[2
     2,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_MESSAGE,
-    PROTOBUF_C_OFFSETOF(Ims__CbNumListType, n_cb_num_list),
-    PROTOBUF_C_OFFSETOF(Ims__CbNumListType, cb_num_list),
+    offsetof(Ims__CbNumListType, n_cb_num_list),
+    offsetof(Ims__CbNumListType, cb_num_list),
     &ims__cb_num_list__descriptor,
     NULL,
     0,            /* packed */
@@ -3429,7 +3429,7 @@ static const ProtobufCIntRange ims__cb_num_list_type__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__cb_num_list_type__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.CbNumListType",
   "CbNumListType",
   "Ims__CbNumListType",
@@ -3449,8 +3449,8 @@ static const ProtobufCFieldDescriptor ims__call_waiting_info__field_descriptors[
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__CallWaitingInfo, has_service_status),
-    PROTOBUF_C_OFFSETOF(Ims__CallWaitingInfo, service_status),
+    offsetof(Ims__CallWaitingInfo, has_service_status),
+    offsetof(Ims__CallWaitingInfo, service_status),
     &ims__service_class_status__descriptor,
     NULL,
     0,            /* packed */
@@ -3462,7 +3462,7 @@ static const ProtobufCFieldDescriptor ims__call_waiting_info__field_descriptors[
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__CallWaitingInfo, service_class),
+    offsetof(Ims__CallWaitingInfo, service_class),
     &ims__service_class__descriptor,
     NULL,
     0,            /* packed */
@@ -3480,7 +3480,7 @@ static const ProtobufCIntRange ims__call_waiting_info__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__call_waiting_info__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.CallWaitingInfo",
   "CallWaitingInfo",
   "Ims__CallWaitingInfo",
@@ -3500,8 +3500,8 @@ static const ProtobufCFieldDescriptor ims__call_forward_info_list__call_forward_
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__CallForwardInfoList__CallForwardInfo, has_status),
-    PROTOBUF_C_OFFSETOF(Ims__CallForwardInfoList__CallForwardInfo, status),
+    offsetof(Ims__CallForwardInfoList__CallForwardInfo, has_status),
+    offsetof(Ims__CallForwardInfoList__CallForwardInfo, status),
     NULL,
     NULL,
     0,            /* packed */
@@ -3512,8 +3512,8 @@ static const ProtobufCFieldDescriptor ims__call_forward_info_list__call_forward_
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__CallForwardInfoList__CallForwardInfo, has_reason),
-    PROTOBUF_C_OFFSETOF(Ims__CallForwardInfoList__CallForwardInfo, reason),
+    offsetof(Ims__CallForwardInfoList__CallForwardInfo, has_reason),
+    offsetof(Ims__CallForwardInfoList__CallForwardInfo, reason),
     NULL,
     NULL,
     0,            /* packed */
@@ -3524,8 +3524,8 @@ static const ProtobufCFieldDescriptor ims__call_forward_info_list__call_forward_
     3,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__CallForwardInfoList__CallForwardInfo, has_service_class),
-    PROTOBUF_C_OFFSETOF(Ims__CallForwardInfoList__CallForwardInfo, service_class),
+    offsetof(Ims__CallForwardInfoList__CallForwardInfo, has_service_class),
+    offsetof(Ims__CallForwardInfoList__CallForwardInfo, service_class),
     NULL,
     NULL,
     0,            /* packed */
@@ -3536,8 +3536,8 @@ static const ProtobufCFieldDescriptor ims__call_forward_info_list__call_forward_
     4,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__CallForwardInfoList__CallForwardInfo, has_toa),
-    PROTOBUF_C_OFFSETOF(Ims__CallForwardInfoList__CallForwardInfo, toa),
+    offsetof(Ims__CallForwardInfoList__CallForwardInfo, has_toa),
+    offsetof(Ims__CallForwardInfoList__CallForwardInfo, toa),
     NULL,
     NULL,
     0,            /* packed */
@@ -3549,7 +3549,7 @@ static const ProtobufCFieldDescriptor ims__call_forward_info_list__call_forward_
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__CallForwardInfoList__CallForwardInfo, number),
+    offsetof(Ims__CallForwardInfoList__CallForwardInfo, number),
     NULL,
     NULL,
     0,            /* packed */
@@ -3560,8 +3560,8 @@ static const ProtobufCFieldDescriptor ims__call_forward_info_list__call_forward_
     6,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__CallForwardInfoList__CallForwardInfo, has_time_seconds),
-    PROTOBUF_C_OFFSETOF(Ims__CallForwardInfoList__CallForwardInfo, time_seconds),
+    offsetof(Ims__CallForwardInfoList__CallForwardInfo, has_time_seconds),
+    offsetof(Ims__CallForwardInfoList__CallForwardInfo, time_seconds),
     NULL,
     NULL,
     0,            /* packed */
@@ -3583,7 +3583,7 @@ static const ProtobufCIntRange ims__call_forward_info_list__call_forward_info__n
 };
 const ProtobufCMessageDescriptor ims__call_forward_info_list__call_forward_info__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.CallForwardInfoList.CallForwardInfo",
   "CallForwardInfo",
   "Ims__CallForwardInfoList__CallForwardInfo",
@@ -3603,8 +3603,8 @@ static const ProtobufCFieldDescriptor ims__call_forward_info_list__field_descrip
     2,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_MESSAGE,
-    PROTOBUF_C_OFFSETOF(Ims__CallForwardInfoList, n_info),
-    PROTOBUF_C_OFFSETOF(Ims__CallForwardInfoList, info),
+    offsetof(Ims__CallForwardInfoList, n_info),
+    offsetof(Ims__CallForwardInfoList, info),
     &ims__call_forward_info_list__call_forward_info__descriptor,
     NULL,
     0,            /* packed */
@@ -3621,7 +3621,7 @@ static const ProtobufCIntRange ims__call_forward_info_list__number_ranges[1 + 1]
 };
 const ProtobufCMessageDescriptor ims__call_forward_info_list__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.CallForwardInfoList",
   "CallForwardInfoList",
   "Ims__CallForwardInfoList",
@@ -3641,8 +3641,8 @@ static const ProtobufCFieldDescriptor ims__conf_info__field_descriptors[1] =
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_BYTES,
-    PROTOBUF_C_OFFSETOF(Ims__ConfInfo, has_conf_info_uri),
-    PROTOBUF_C_OFFSETOF(Ims__ConfInfo, conf_info_uri),
+    offsetof(Ims__ConfInfo, has_conf_info_uri),
+    offsetof(Ims__ConfInfo, conf_info_uri),
     NULL,
     NULL,
     0,            /* packed */
@@ -3659,7 +3659,7 @@ static const ProtobufCIntRange ims__conf_info__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__conf_info__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.ConfInfo",
   "ConfInfo",
   "Ims__ConfInfo",
@@ -3679,8 +3679,8 @@ static const ProtobufCFieldDescriptor ims__supp_svc_notification__field_descript
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcNotification, has_notificationtype),
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcNotification, notificationtype),
+    offsetof(Ims__SuppSvcNotification, has_notificationtype),
+    offsetof(Ims__SuppSvcNotification, notificationtype),
     &ims__notification_type__descriptor,
     NULL,
     0,            /* packed */
@@ -3691,8 +3691,8 @@ static const ProtobufCFieldDescriptor ims__supp_svc_notification__field_descript
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcNotification, has_code),
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcNotification, code),
+    offsetof(Ims__SuppSvcNotification, has_code),
+    offsetof(Ims__SuppSvcNotification, code),
     NULL,
     NULL,
     0,            /* packed */
@@ -3703,8 +3703,8 @@ static const ProtobufCFieldDescriptor ims__supp_svc_notification__field_descript
     3,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcNotification, has_index),
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcNotification, index),
+    offsetof(Ims__SuppSvcNotification, has_index),
+    offsetof(Ims__SuppSvcNotification, index),
     NULL,
     NULL,
     0,            /* packed */
@@ -3715,8 +3715,8 @@ static const ProtobufCFieldDescriptor ims__supp_svc_notification__field_descript
     4,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcNotification, has_type),
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcNotification, type),
+    offsetof(Ims__SuppSvcNotification, has_type),
+    offsetof(Ims__SuppSvcNotification, type),
     NULL,
     NULL,
     0,            /* packed */
@@ -3728,7 +3728,7 @@ static const ProtobufCFieldDescriptor ims__supp_svc_notification__field_descript
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcNotification, number),
+    offsetof(Ims__SuppSvcNotification, number),
     NULL,
     NULL,
     0,            /* packed */
@@ -3739,8 +3739,8 @@ static const ProtobufCFieldDescriptor ims__supp_svc_notification__field_descript
     6,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcNotification, has_connid),
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcNotification, connid),
+    offsetof(Ims__SuppSvcNotification, has_connid),
+    offsetof(Ims__SuppSvcNotification, connid),
     NULL,
     NULL,
     0,            /* packed */
@@ -3762,7 +3762,7 @@ static const ProtobufCIntRange ims__supp_svc_notification__number_ranges[1 + 1] 
 };
 const ProtobufCMessageDescriptor ims__supp_svc_notification__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.SuppSvcNotification",
   "SuppSvcNotification",
   "Ims__SuppSvcNotification",
@@ -3782,8 +3782,8 @@ static const ProtobufCFieldDescriptor ims__supp_svc_status__field_descriptors[1]
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcStatus, has_status),
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcStatus, status),
+    offsetof(Ims__SuppSvcStatus, has_status),
+    offsetof(Ims__SuppSvcStatus, status),
     &ims__service_class_status__descriptor,
     NULL,
     0,            /* packed */
@@ -3800,7 +3800,7 @@ static const ProtobufCIntRange ims__supp_svc_status__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__supp_svc_status__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.SuppSvcStatus",
   "SuppSvcStatus",
   "Ims__SuppSvcStatus",
@@ -3820,8 +3820,8 @@ static const ProtobufCFieldDescriptor ims__supp_svc_request__field_descriptors[3
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcRequest, has_operationtype),
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcRequest, operationtype),
+    offsetof(Ims__SuppSvcRequest, has_operationtype),
+    offsetof(Ims__SuppSvcRequest, operationtype),
     NULL,
     NULL,
     0,            /* packed */
@@ -3832,8 +3832,8 @@ static const ProtobufCFieldDescriptor ims__supp_svc_request__field_descriptors[3
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcRequest, has_facilitytype),
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcRequest, facilitytype),
+    offsetof(Ims__SuppSvcRequest, has_facilitytype),
+    offsetof(Ims__SuppSvcRequest, facilitytype),
     NULL,
     NULL,
     0,            /* packed */
@@ -3845,7 +3845,7 @@ static const ProtobufCFieldDescriptor ims__supp_svc_request__field_descriptors[3
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcRequest, cbnumlisttype),
+    offsetof(Ims__SuppSvcRequest, cbnumlisttype),
     &ims__cb_num_list_type__descriptor,
     NULL,
     0,            /* packed */
@@ -3864,7 +3864,7 @@ static const ProtobufCIntRange ims__supp_svc_request__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__supp_svc_request__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.SuppSvcRequest",
   "SuppSvcRequest",
   "Ims__SuppSvcRequest",
@@ -3884,8 +3884,8 @@ static const ProtobufCFieldDescriptor ims__supp_svc_response__field_descriptors[
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcResponse, has_status),
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcResponse, status),
+    offsetof(Ims__SuppSvcResponse, has_status),
+    offsetof(Ims__SuppSvcResponse, status),
     &ims__service_class_status__descriptor,
     NULL,
     0,            /* packed */
@@ -3896,8 +3896,8 @@ static const ProtobufCFieldDescriptor ims__supp_svc_response__field_descriptors[
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FIXED32,
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcResponse, has_facilitytype),
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcResponse, facilitytype),
+    offsetof(Ims__SuppSvcResponse, has_facilitytype),
+    offsetof(Ims__SuppSvcResponse, facilitytype),
     NULL,
     NULL,
     0,            /* packed */
@@ -3909,7 +3909,7 @@ static const ProtobufCFieldDescriptor ims__supp_svc_response__field_descriptors[
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcResponse, failurecause),
+    offsetof(Ims__SuppSvcResponse, failurecause),
     NULL,
     NULL,
     0,            /* packed */
@@ -3920,8 +3920,8 @@ static const ProtobufCFieldDescriptor ims__supp_svc_response__field_descriptors[
     4,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_MESSAGE,
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcResponse, n_cbnumlisttype),
-    PROTOBUF_C_OFFSETOF(Ims__SuppSvcResponse, cbnumlisttype),
+    offsetof(Ims__SuppSvcResponse, n_cbnumlisttype),
+    offsetof(Ims__SuppSvcResponse, cbnumlisttype),
     &ims__cb_num_list_type__descriptor,
     NULL,
     0,            /* packed */
@@ -3941,7 +3941,7 @@ static const ProtobufCIntRange ims__supp_svc_response__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__supp_svc_response__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.SuppSvcResponse",
   "SuppSvcResponse",
   "Ims__SuppSvcResponse",
@@ -3961,8 +3961,8 @@ static const ProtobufCFieldDescriptor ims__video_call_quality__field_descriptors
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(Ims__VideoCallQuality, has_quality),
-    PROTOBUF_C_OFFSETOF(Ims__VideoCallQuality, quality),
+    offsetof(Ims__VideoCallQuality, has_quality),
+    offsetof(Ims__VideoCallQuality, quality),
     &ims__quality__descriptor,
     NULL,
     0,            /* packed */
@@ -3979,7 +3979,7 @@ static const ProtobufCIntRange ims__video_call_quality__number_ranges[1 + 1] =
 };
 const ProtobufCMessageDescriptor ims__video_call_quality__descriptor =
 {
-  PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__MESSAGE_DESCRIPTOR_MAGIC,
   "ims.VideoCallQuality",
   "VideoCallQuality",
   "Ims__VideoCallQuality",
@@ -4011,7 +4011,7 @@ const ProtobufCEnumValueIndex ims__msg_type__enum_values_by_name[4] =
 };
 const ProtobufCEnumDescriptor ims__msg_type__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.MsgType",
   "MsgType",
   "Ims__MsgType",
@@ -4133,7 +4133,7 @@ const ProtobufCEnumValueIndex ims__msg_id__enum_values_by_name[49] =
 };
 const ProtobufCEnumDescriptor ims__msg_id__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.MsgId",
   "MsgId",
   "Ims__MsgId",
@@ -4175,7 +4175,7 @@ const ProtobufCEnumValueIndex ims__error__enum_values_by_name[9] =
 };
 const ProtobufCEnumDescriptor ims__error__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.Error",
   "Error",
   "Ims__Error",
@@ -4211,7 +4211,7 @@ const ProtobufCEnumValueIndex ims__call_state__enum_values_by_name[6] =
 };
 const ProtobufCEnumDescriptor ims__call_state__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.CallState",
   "CallState",
   "Ims__CallState",
@@ -4241,7 +4241,7 @@ const ProtobufCEnumValueIndex ims__radio_state__enum_values_by_name[3] =
 };
 const ProtobufCEnumDescriptor ims__radio_state__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.RadioState",
   "RadioState",
   "Ims__RadioState",
@@ -4287,7 +4287,7 @@ const ProtobufCEnumValueIndex ims__call_type__enum_values_by_name[11] =
 };
 const ProtobufCEnumDescriptor ims__call_type__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.CallType",
   "CallType",
   "Ims__CallType",
@@ -4335,7 +4335,7 @@ const ProtobufCEnumValueIndex ims__call_fail_cause__enum_values_by_name[12] =
 };
 const ProtobufCEnumDescriptor ims__call_fail_cause__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.CallFailCause",
   "CallFailCause",
   "Ims__CallFailCause",
@@ -4369,7 +4369,7 @@ const ProtobufCEnumValueIndex ims__call_domain__enum_values_by_name[5] =
 };
 const ProtobufCEnumDescriptor ims__call_domain__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.CallDomain",
   "CallDomain",
   "Ims__CallDomain",
@@ -4399,7 +4399,7 @@ const ProtobufCEnumValueIndex ims__srv_type__enum_values_by_name[3] =
 };
 const ProtobufCEnumDescriptor ims__srv_type__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.SrvType",
   "SrvType",
   "Ims__SrvType",
@@ -4431,7 +4431,7 @@ const ProtobufCEnumValueIndex ims__status_type__enum_values_by_name[4] =
 };
 const ProtobufCEnumDescriptor ims__status_type__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.StatusType",
   "StatusType",
   "Ims__StatusType",
@@ -4497,7 +4497,7 @@ const ProtobufCEnumValueIndex ims__radio_tech_type__enum_values_by_name[21] =
 };
 const ProtobufCEnumDescriptor ims__radio_tech_type__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.RadioTechType",
   "RadioTechType",
   "Ims__RadioTechType",
@@ -4525,7 +4525,7 @@ const ProtobufCEnumValueIndex ims__ip_presentation__enum_values_by_name[2] =
 };
 const ProtobufCEnumDescriptor ims__ip_presentation__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.IpPresentation",
   "IpPresentation",
   "Ims__IpPresentation",
@@ -4557,7 +4557,7 @@ const ProtobufCEnumValueIndex ims__handover__msg__type__enum_values_by_name[4] =
 };
 const ProtobufCEnumDescriptor ims__handover__msg__type__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.Handover_Msg_Type",
   "Handover_Msg_Type",
   "Ims__HandoverMsgType",
@@ -4583,7 +4583,7 @@ const ProtobufCEnumValueIndex ims__extra__type__enum_values_by_name[1] =
 };
 const ProtobufCEnumDescriptor ims__extra__type__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.Extra_Type",
   "Extra_Type",
   "Ims__ExtraType",
@@ -4615,7 +4615,7 @@ const ProtobufCEnumValueIndex ims__tty__mode__type__enum_values_by_name[4] =
 };
 const ProtobufCEnumDescriptor ims__tty__mode__type__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.Tty_Mode_Type",
   "Tty_Mode_Type",
   "Ims__TtyModeType",
@@ -4645,7 +4645,7 @@ const ProtobufCEnumValueIndex ims__clip_status__enum_values_by_name[3] =
 };
 const ProtobufCEnumDescriptor ims__clip_status__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.ClipStatus",
   "ClipStatus",
   "Ims__ClipStatus",
@@ -4673,7 +4673,7 @@ const ProtobufCEnumValueIndex ims__service_class_status__enum_values_by_name[2] 
 };
 const ProtobufCEnumDescriptor ims__service_class_status__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.ServiceClassStatus",
   "ServiceClassStatus",
   "Ims__ServiceClassStatus",
@@ -4701,7 +4701,7 @@ const ProtobufCEnumValueIndex ims__notification_type__enum_values_by_name[2] =
 };
 const ProtobufCEnumDescriptor ims__notification_type__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.NotificationType",
   "NotificationType",
   "Ims__NotificationType",
@@ -4735,7 +4735,7 @@ const ProtobufCEnumValueIndex ims__supp_svc_operation_type__enum_values_by_name[
 };
 const ProtobufCEnumDescriptor ims__supp_svc_operation_type__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.SuppSvcOperationType",
   "SuppSvcOperationType",
   "Ims__SuppSvcOperationType",
@@ -4783,7 +4783,7 @@ const ProtobufCEnumValueIndex ims__supp_svc_facility_type__enum_values_by_name[1
 };
 const ProtobufCEnumDescriptor ims__supp_svc_facility_type__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.SuppSvcFacilityType",
   "SuppSvcFacilityType",
   "Ims__SuppSvcFacilityType",
@@ -4811,7 +4811,7 @@ const ProtobufCEnumValueIndex ims__quality__enum_values_by_name[2] =
 };
 const ProtobufCEnumDescriptor ims__quality__descriptor =
 {
-  PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  PROTOBUF_C__ENUM_DESCRIPTOR_MAGIC,
   "ims.Quality",
   "Quality",
   "Ims__Quality",

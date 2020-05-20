@@ -5,7 +5,8 @@
  *  --------------------------------------------------------------------------
  *
  */
-
+#ifndef LOCALDEFS_H
+#define LOCALDEFS_H
 
 /*
  * Various time bases.
@@ -106,3 +107,5 @@ typedef struct ind_offset {
 	int ind_received;	/* Flag for indication status */
 	pthread_mutex_t lock;   /* Lock to protect structure */
 } cb_indication_t;
+
+#endif

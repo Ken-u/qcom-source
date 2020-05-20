@@ -167,8 +167,8 @@ static qcril_dispatch_table_entry_type qcril_event_table[] =
   /* 7 - RIL_REQUEST_CHANGE_SIM_PIN2 */
   { QCRIL_REG_ALL_ACTIVE_STATES( RIL_REQUEST_CHANGE_SIM_PIN2, qcril_uim_request_change_pin ) },
 
-  /* 8 - RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE */
-  { QCRIL_REG_ALL_ACTIVE_STATES( RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE, qcril_uim_request_enter_perso_key ) },
+  /* 8 - RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION */
+  { QCRIL_REG_ALL_ACTIVE_STATES( RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION, qcril_uim_request_enter_perso_key ) },
 
   /* 11 - RIL_REQUEST_GET_IMSI */
   { QCRIL_REG_SIM_OR_RUIM_READY_STATES( RIL_REQUEST_GET_IMSI, qcril_uim_request_get_imsi ) },
@@ -625,9 +625,10 @@ static qcril_dispatch_table_entry_type qcril_event_table[] =
   /* 109 - RIL_REQUEST_SET_UICC_SUBSCRIPTION */
   { QCRIL_REG_ALL_ACTIVE_STATES( RIL_REQUEST_SET_UICC_SUBSCRIPTION, qcril_qmi_nas_set_uicc_subscription ) },
 
+#ifndef RIL_REQUEST_SET_UICC_SUBSCRIPTION
   /* 110 - RIL_REQUEST_SET_DATA_SUBSCRIPTION */
   { QCRIL_REG_ALL_ACTIVE_STATES( RIL_REQUEST_SET_DATA_SUBSCRIPTION, qcril_qmi_nas_dsds_request_set_data_subscription ) },
-
+#endif
   /* 111 - RIL_REQUEST_GET_UICC_SUBSCRIPTION */
   { QCRIL_REG_ALL_ACTIVE_STATES( RIL_REQUEST_GET_UICC_SUBSCRIPTION, qcril_qmi_nas_dsds_request_get_uicc_subscription ) },
 
@@ -1065,7 +1066,9 @@ static int qmi_ril_fw_dedicated_thrd_exec_android_requests_set[] =
     RIL_REQUEST_CDMA_QUERY_ROAMING_PREFERENCE,
     RIL_REQUEST_EXIT_EMERGENCY_CALLBACK_MODE,
     RIL_REQUEST_SET_UICC_SUBSCRIPTION,
+#ifndef RIL_REQUEST_SET_UICC_SUBSCRIPTION
     RIL_REQUEST_SET_DATA_SUBSCRIPTION,
+#endif
     RIL_REQUEST_GET_UICC_SUBSCRIPTION,
     RIL_REQUEST_GET_DATA_SUBSCRIPTION,
     RIL_REQUEST_SET_SUBSCRIPTION_MODE,
@@ -6487,7 +6490,7 @@ uint32_t qmi_ril_fw_android_request_get_handling_capabilities( int android_reque
     case RIL_REQUEST_ENTER_SIM_PUK2:
     case RIL_REQUEST_CHANGE_SIM_PIN:
     case RIL_REQUEST_CHANGE_SIM_PIN2:
-    case RIL_REQUEST_ENTER_DEPERSONALIZATION_CODE:
+    case RIL_REQUEST_ENTER_NETWORK_DEPERSONALIZATION:
     case RIL_REQUEST_GET_IMSI:
     case RIL_REQUEST_SIM_IO:
     case RIL_REQUEST_SETUP_DATA_CALL:

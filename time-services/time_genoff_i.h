@@ -19,7 +19,8 @@
 #define TIME_LOGE(...) { ALOGE(__VA_ARGS__); }
 #define TIME_LOGD(...) { ALOGD(__VA_ARGS__); }
 
-#include <cutils/log.h>
+#include <log/log.h>
+#include "localdefs.h"
 
 #define SEC_TO_MSEC(s)	((s) * 1000ULL)
 #define MSEC_TO_SEC(s)	((s) / 1000ULL)

@@ -560,7 +560,8 @@ qmi_client_decode_msg_async
 
     if (!user_handle)
     {
-        return QMI_SERVICE_ERR_INVALID_HANDLE;
+        QMI_ERR_MSG_1("Invalid handle, ERROR CODE:%d \n", QMI_SERVICE_ERR_INVALID_HANDLE);
+        return;
     }
 
     if ( NULL != _qmi_service_hook_response_passthrough ) {

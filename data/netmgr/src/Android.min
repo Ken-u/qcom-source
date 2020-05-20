@@ -23,7 +23,7 @@ endif
 
 LOCAL_CFLAGS += -include bionic/libc/kernel/uapi/asm-arm/asm/posix_types.h
 LOCAL_CFLAGS += -include bionic/libc/kernel/uapi/asm-arm/asm/byteorder.h
-LOCAL_CFLAGS += -include bionic/libc/kernel/uapi/asm-arm/asm/socket.h
+LOCAL_CFLAGS += -include bionic/libc/kernel/uapi/linux/socket.h
 
 #Generate linker map file
 #LOCAL_LDFLAGS += -Xlinker -Map=output.map
@@ -34,6 +34,7 @@ LOCAL_CFLAGS += -DFEATURE_GB_NET_UTILS
 else
 LOCAL_C_INCLUDES := system/core/include/netutils/
 endif
+#LOCAL_C_INCLUDES += bionic/libc/kernel/uapi
 LOCAL_C_INCLUDES += system/core/include/
 LOCAL_C_INCLUDES += $(LOCAL_PATH)
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../inc/

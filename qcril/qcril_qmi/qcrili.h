@@ -30,7 +30,9 @@
 #include <stdint.h>
 
 #ifdef QCRIL_PROTOBUF_BUILD_ENABLED
-    #include "imsIF.pb-c.h"
+#include "imsIF.pb-c.h"
+#else
+//#include "imsIF.without-pb-c.h"
 #endif
 #ifndef QMI_RIL_UTF
 #include "qcril_qmi_ims_if_pb.h"
@@ -892,6 +894,103 @@ typedef struct qcril_dispatch_tag
   uint16 allowed_radio_states_mask;
 } qcril_dispatch_table_entry_type;
 
+#ifndef RIL_UNSOL_ON_SS
+
+#define RIL_UNSOL_ON_SS 11038
+#define RIL_UNSOL_STK_CC_ALPHA_NOTIFY 11039
+
+#define CALL_FAIL_DIAL_MODIFIED_TO_USSD  244
+#define CALL_FAIL_DIAL_MODIFIED_TO_SS  245
+#define CALL_FAIL_DIAL_MODIFIED_TO_DIAL 246
+
+typedef enum {
+  SS_CFU,
+  SS_CF_BUSY,
+  SS_CF_NO_REPLY,
+  SS_CF_NOT_REACHABLE,
+  SS_CF_ALL,
+  SS_CF_ALL_CONDITIONAL,
+  SS_CLIP,
+  SS_CLIR,
+  SS_COLP,
+  SS_COLR,
+  SS_WAIT,
+  SS_BAOC,
+  SS_BAOIC,
+  SS_BAOIC_EXC_HOME,
+  SS_BAIC,
+  SS_BAIC_ROAMING,
+  SS_ALL_BARRING,
+  SS_OUTGOING_BARRING,
+  SS_INCOMING_BARRING
+} RIL_SsServiceType;
+
+typedef enum {
+  SS_ACTIVATION,
+  SS_DEACTIVATION,
+  SS_INTERROGATION,
+  SS_REGISTRATION,
+  SS_ERASURE
+} RIL_SsRequestType;
+
+typedef enum {
+  SS_ALL_TELE_AND_BEARER_SERVICES,
+  SS_ALL_TELESEVICES,
+  SS_TELEPHONY,
+  SS_ALL_DATA_TELESERVICES,
+  SS_SMS_SERVICES,
+  SS_ALL_TELESERVICES_EXCEPT_SMS
+} RIL_SsTeleserviceType;
+
+#define SS_INFO_MAX 4
+#define NUM_SERVICE_CLASSES 7
+
+typedef struct {
+  int numValidIndexes; /* This gives the number of valid values in cfInfo.
+                       For example if voice is forwarded to one number and data
+                       is forwarded to a different one then numValidIndexes will be
+                       2 indicating total number of valid values in cfInfo.
+                       Similarly if all the services are forwarded to the same
+                       number then the value of numValidIndexes will be 1. */
+
+  RIL_CallForwardInfo cfInfo[NUM_SERVICE_CLASSES]; /* This is the response data
+                                                      for SS request to query call
+                                                      forward status. see
+                                                      RIL_REQUEST_QUERY_CALL_FORWARD_STATUS */
+} RIL_CfData;
+
+typedef struct {
+  RIL_SsServiceType serviceType;
+  RIL_SsRequestType requestType;
+  RIL_SsTeleserviceType teleserviceType;
+  int serviceClass;
+  RIL_Errno result;
+
+  union {
+    int ssInfo[SS_INFO_MAX]; /* This is the response data for most of the SS GET/SET
+                                RIL requests. E.g. RIL_REQUSET_GET_CLIR returns
+                                two ints, so first two values of ssInfo[] will be
+                                used for response if serviceType is SS_CLIR and
+                                requestType is SS_INTERROGATION */
+
+    RIL_CfData cfData;
+  };
+} RIL_StkCcUnsolSsResponse;
+
+#define RIL_E_UNUSED                     16
+#define RIL_E_DIAL_MODIFIED_TO_USSD      17 /* DIAL request modified to USSD */
+#define RIL_E_DIAL_MODIFIED_TO_SS        18 /* DIAL request modified to SS */
+#define RIL_E_DIAL_MODIFIED_TO_DIAL      19 /* DIAL request modified to DIAL with different data */
+#define RIL_E_USSD_MODIFIED_TO_DIAL      20 /* USSD request modified to DIAL */
+#define RIL_E_USSD_MODIFIED_TO_SS        21 /* USSD request modified to SS */
+#define RIL_E_USSD_MODIFIED_TO_USSD      22 /* USSD request modified to different USSD request */
+#define RIL_E_SS_MODIFIED_TO_DIAL        23 /* SS request modified to DIAL */
+#define RIL_E_SS_MODIFIED_TO_USSD        24 /* SS request modified to USSD */
+#define RIL_E_SS_MODIFIED_TO_SS          25 /* SS request modified to different SS request */
+#define RIL_E_SUBSCRIPTION_NOT_SUPPORTED 26 /* Subscription not supported by RIL */
+
+#endif //RIL_UNSOL_ON_SS
+
 #ifndef RIL_REQUEST_SET_INITIAL_ATTACH_APN
 #define RIL_REQUEST_SET_INITIAL_ATTACH_APN 123
 typedef struct {
@@ -901,6 +1000,10 @@ typedef struct {
     char *username;
     char *password;
 } RIL_InitialAttachApn;
+#endif
+
+#ifndef RIL_E_UNUSED
+#define RIL_E_UNUSED 16
 #endif
 
 #define RIL_E_SKIP_LTE_REATTACH RIL_E_UNUSED
@@ -1409,14 +1512,6 @@ QCRIL_EXTERN(qmi_voice_request_call_deflection);
 
 #if !defined(RIL_QCOM_VERSION) || RIL_QCOM_VERSION < 3
 #define RADIO_TECH_TD_SCDMA     117
-
-typedef struct {
-  int rscp; /* The Received Signal Code Power in dBm multipled by -1.
-             * Range : 25 to 120
-             * INT_MAX: 0x7FFFFFFF denotes invalid value.
-             * Reference: 3GPP TS 25.123, section 9.1.1.1 */
-} RIL_TD_SCDMA_SignalStrength;
-
 #else /* !defined(RIL_QCOM_VERSION) || RIL_QCOM_VERSION < 3 */
 
 #if (RIL_VERSION >= 9)
@@ -1990,102 +2085,5 @@ typedef struct {
 #define RIL_REQUEST_GET_DATA_CALL_PROFILE 10111
 
 #endif // RIL_REQUEST_GET_DATA_CALL_PROFILE
-
-#ifndef RIL_UNSOL_ON_SS
-
-#define RIL_UNSOL_ON_SS 11038
-#define RIL_UNSOL_STK_CC_ALPHA_NOTIFY 11039
-
-#define CALL_FAIL_DIAL_MODIFIED_TO_USSD  244
-#define CALL_FAIL_DIAL_MODIFIED_TO_SS  245
-#define CALL_FAIL_DIAL_MODIFIED_TO_DIAL 246
-
-typedef enum {
-  SS_CFU,
-  SS_CF_BUSY,
-  SS_CF_NO_REPLY,
-  SS_CF_NOT_REACHABLE,
-  SS_CF_ALL,
-  SS_CF_ALL_CONDITIONAL,
-  SS_CLIP,
-  SS_CLIR,
-  SS_COLP,
-  SS_COLR,
-  SS_WAIT,
-  SS_BAOC,
-  SS_BAOIC,
-  SS_BAOIC_EXC_HOME,
-  SS_BAIC,
-  SS_BAIC_ROAMING,
-  SS_ALL_BARRING,
-  SS_OUTGOING_BARRING,
-  SS_INCOMING_BARRING
-} RIL_SsServiceType;
-
-typedef enum {
-  SS_ACTIVATION,
-  SS_DEACTIVATION,
-  SS_INTERROGATION,
-  SS_REGISTRATION,
-  SS_ERASURE
-} RIL_SsRequestType;
-
-typedef enum {
-  SS_ALL_TELE_AND_BEARER_SERVICES,
-  SS_ALL_TELESEVICES,
-  SS_TELEPHONY,
-  SS_ALL_DATA_TELESERVICES,
-  SS_SMS_SERVICES,
-  SS_ALL_TELESERVICES_EXCEPT_SMS
-} RIL_SsTeleserviceType;
-
-#define SS_INFO_MAX 4
-#define NUM_SERVICE_CLASSES 7
-
-typedef struct {
-  int numValidIndexes; /* This gives the number of valid values in cfInfo.
-                       For example if voice is forwarded to one number and data
-                       is forwarded to a different one then numValidIndexes will be
-                       2 indicating total number of valid values in cfInfo.
-                       Similarly if all the services are forwarded to the same
-                       number then the value of numValidIndexes will be 1. */
-
-  RIL_CallForwardInfo cfInfo[NUM_SERVICE_CLASSES]; /* This is the response data
-                                                      for SS request to query call
-                                                      forward status. see
-                                                      RIL_REQUEST_QUERY_CALL_FORWARD_STATUS */
-} RIL_CfData;
-
-typedef struct {
-  RIL_SsServiceType serviceType;
-  RIL_SsRequestType requestType;
-  RIL_SsTeleserviceType teleserviceType;
-  int serviceClass;
-  RIL_Errno result;
-
-  union {
-    int ssInfo[SS_INFO_MAX]; /* This is the response data for most of the SS GET/SET
-                                RIL requests. E.g. RIL_REQUSET_GET_CLIR returns
-                                two ints, so first two values of ssInfo[] will be
-                                used for response if serviceType is SS_CLIR and
-                                requestType is SS_INTERROGATION */
-
-    RIL_CfData cfData;
-  };
-} RIL_StkCcUnsolSsResponse;
-
-#define RIL_E_UNUSED                     16
-#define RIL_E_DIAL_MODIFIED_TO_USSD      17 /* DIAL request modified to USSD */
-#define RIL_E_DIAL_MODIFIED_TO_SS        18 /* DIAL request modified to SS */
-#define RIL_E_DIAL_MODIFIED_TO_DIAL      19 /* DIAL request modified to DIAL with different data */
-#define RIL_E_USSD_MODIFIED_TO_DIAL      20 /* USSD request modified to DIAL */
-#define RIL_E_USSD_MODIFIED_TO_SS        21 /* USSD request modified to SS */
-#define RIL_E_USSD_MODIFIED_TO_USSD      22 /* USSD request modified to different USSD request */
-#define RIL_E_SS_MODIFIED_TO_DIAL        23 /* SS request modified to DIAL */
-#define RIL_E_SS_MODIFIED_TO_USSD        24 /* SS request modified to USSD */
-#define RIL_E_SS_MODIFIED_TO_SS          25 /* SS request modified to different SS request */
-#define RIL_E_SUBSCRIPTION_NOT_SUPPORTED 26 /* Subscription not supported by RIL */
-
-#endif //RIL_UNSOL_ON_SS
 
 #endif /* QCRILI_H */

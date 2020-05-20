@@ -45,8 +45,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
 #include <google/protobuf-c/protobuf-c.h>
 
-PROTOBUF_C_BEGIN_DECLS
-
+PROTOBUF_C__BEGIN_DECLS
 
 typedef struct _Ims__MsgTag Ims__MsgTag;
 typedef struct _Ims__CallFailCauseResponse Ims__CallFailCauseResponse;
@@ -1710,7 +1709,7 @@ extern const ProtobufCMessageDescriptor ims__supp_svc_request__descriptor;
 extern const ProtobufCMessageDescriptor ims__supp_svc_response__descriptor;
 extern const ProtobufCMessageDescriptor ims__video_call_quality__descriptor;
 
-PROTOBUF_C_END_DECLS
+PROTOBUF_C__END_DECLS
 
 
 #endif  /* PROTOBUF_imsIF_2eproto__INCLUDED */

@@ -60,7 +60,7 @@
 #include "qcril_qmi_imsa.h"
 #include "qcril_am.h"
 
-#include "time_genoff.h"
+#include "time_genoff_i.h"
 
 // required for glibc compile
 #include <limits.h>
@@ -1883,6 +1883,16 @@ static qcril_qmi_nas_get_engineer_mode_info_timer_type qcril_qmi_nas_get_enginee
 //===========================================================================
 
 //INLINE functions
+void qcril_qmi_nas_perform_incremental_network_scan_ind_handler
+(
+nas_perform_incremental_network_scan_ind_msg_v01 * nw_scan_ind
+);
+void qcril_qmi_nas_get_multisim_device_capability();
+void qcril_qmi_nas_get_subscription_info();
+void qcril_qmi_nas_check_initial_attach_state
+(
+    nas_srv_domain_pref_enum_type_v01 srv_domain_pref
+);
 static inline int qcril_qmi_nas_is_atel_rat_3gpp(RIL_RadioTechnology atel_rat);
 static inline int qcril_qmi_nas_is_atel_rat_3gpp2(RIL_RadioTechnology atel_rat);
 static inline RIL_RadioTechnology process_3gpp_radio_technology(RIL_RadioTechnology reported_radio_technology, uint16_t mode_pref);
@@ -4052,20 +4062,20 @@ int qmi_ril_retrieve_data_connection_information_from_data_call_list(int *nof_da
                     memset(qcril_qmi_nas_dc_rt_info_helper_holder, 0, sizeof(*qcril_qmi_nas_dc_rt_info_helper_holder));
                     for( iter_i = 0; iter_i < *nof_data_calls; iter_i++ )
                     {
-                        qcril_qmi_nas_dc_rt_info_helper_holder->data_call_real_time_info_list[iter_i].call_id = data_call_list[iter_i].call_id;
-                        qcril_qmi_nas_dc_rt_info_helper_holder->data_call_real_time_info_list[iter_i].radioTech = data_call_list[iter_i].radioTech;
+                        //qcril_qmi_nas_dc_rt_info_helper_holder->data_call_real_time_info_list[iter_i].call_id = data_call_list[iter_i].call_id;
+                        //qcril_qmi_nas_dc_rt_info_helper_holder->data_call_real_time_info_list[iter_i].radioTech = data_call_list[iter_i].radioTech;
                         switch( data_call_list[iter_i].active )
                         {
                             case CALL_INACTIVE:
-                                qcril_qmi_nas_dc_rt_info_helper_holder->data_call_real_time_info_list[iter_i].powerState = RIL_DC_POWER_STATE_INACTIVE;
+                                qcril_qmi_nas_dc_rt_info_helper_holder->data_call_real_time_info_list[iter_i].powerState = RIL_DC_POWER_STATE_MEDIUM;
                                 break;
 
                             case CALL_ACTIVE_PHYSLINK_DOWN:
-                                qcril_qmi_nas_dc_rt_info_helper_holder->data_call_real_time_info_list[iter_i].powerState = RIL_DC_POWER_STATE_DORMANT;
+                                qcril_qmi_nas_dc_rt_info_helper_holder->data_call_real_time_info_list[iter_i].powerState = RIL_DC_POWER_STATE_LOW;
                                 break;
 
                             case CALL_ACTIVE_PHYSLINK_UP:
-                                qcril_qmi_nas_dc_rt_info_helper_holder->data_call_real_time_info_list[iter_i].powerState = RIL_DC_POWER_STATE_NOT_DORMANT;
+                                qcril_qmi_nas_dc_rt_info_helper_holder->data_call_real_time_info_list[iter_i].powerState = RIL_DC_POWER_STATE_HIGH;
                                 break;
 
                             default:
@@ -5678,7 +5688,7 @@ void qcril_qmi_nas_set_builtin_plmn_list
     if (no_of_oplmn > 0)
     {
       req_msg.oplmn_list_valid = TRUE;
-      req_msg.oplmn_list.list_id = params_ptr->t;
+      req_msg.oplmn_list.list_id = (uint32_t)(params_ptr->t);
       // total_list_entries may vary only when we send multiple oplmn lists.
       // Currently Android will send only max 500 entries.
       req_msg.oplmn_list.total_list_entries = no_of_oplmn;
@@ -16293,7 +16303,7 @@ void qcril_qmi_voice_ims_send_unsol_radio_state_change_helper()
 void qcril_qmi_nas_dms_update_multisim_config_property()
 {
 
-    char prop_val[ QMI_RIL_SYS_PROP_LENGTH_MULTI_SIM + 1 ];
+    char prop_val[ /*QMI_RIL_SYS_PROP_LENGTH_MULTI_SIM + 1 */ PROP_VALUE_MAX];
     int is_prop_set_required = FALSE;
 
     QCRIL_LOG_FUNC_ENTRY();
@@ -29837,7 +29847,7 @@ int qcril_qmi_nas_get_escv_type
         slot = qmi_ril_get_sim_slot();
         NAS_CACHE_UNLOCK();
 
-        QCRIL_LOG_INFO( "slot %d", slot, nas_common_info.card_info[slot].iccid? nas_common_info.card_info[slot].iccid : "null" );
+        QCRIL_LOG_INFO( "slot %d", slot, nas_common_info.card_info[slot].iccid_len > 0? nas_common_info.card_info[slot].iccid : "null" );
         if (nas_common_info.card_info[slot].iccid_len > 0)
         {
             if (res)
